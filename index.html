@@ -3,848 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>savingonly.com | coupons and deals</title>
-     <!-- ***********************************Montserrat********************************** -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>RORO Rooms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/montserrat.css">
     <link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-    <nav class="nav">
-        <i class="fa fa-bars navOpenBtn" aria-hidden="true"></i>
-        <a href="/" class="logo">Saving<span>Only</span></a>
-        <ul class="nav-links">
-            <i class="fa fa-times navCloseBtn" aria-hidden="true"></i> 
-            <li><a class="link-hover" href="/">Home</a></li>
-            <li><a class="link-hover" href="./a-z-store.html">Store</a></li>
-            <li>
-                <div class="dropdown dropdown-hover">
-                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Blog 
-                    </a>
-                  
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./blogs.html">All Blogs</a></li>
-                      <li><a class="dropdown-item" href="./blogs-cat.html">CBD Oils</a></li>
-                      <li><a class="dropdown-item" href="./blogs-cat.html">Fashion</a></li>
-                      <li><a class="dropdown-item" href="./blogs-cat.html">Beauty</a></li>
-                      <li><a class="dropdown-item" href="./blogs-cat.html">Electronics</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a class="link-hover" href="./category.html">Category</a></li>
-        </ul>
-        <i class="fa fa-search search-icon" aria-hidden="true" id="searchIcon"></i>
-        <div class="search-box">
-          <i class="fa fa-search search-icon" aria-hidden="true"></i>  
-          <input type="text" placeholder="search coupons, brands and stores">  
+     <header class="pageHeader">
+        <nav>
+            <div class="navMenu">
+                <button data-bs-toggle="offcanvas" data-bs-target="#headerOffcanvas">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"></path></svg>
+                </button>
+            </div>
+            <div class="logoBox">
+                Roro<span>Rooms</span>
+            </div>
+            <div class="navLinkBox">
+                <ul>
+                    <li><a href="#">Business with us</a></li>
+                    <li><a href="#">List your Hotel</a></li>
+                    <li>
+                        <a href="#" class="displayFloatingBox">Connect US <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                        <div class="floatingBoxes">
+                            <div class="connectBox">
+                                <div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M21.9994 16.92V19.92C22.0006 20.1985 21.9435 20.4742 21.832 20.7294C21.7204 20.9845 21.5567 21.2136 21.3515 21.4019C21.1463 21.5901 20.904 21.7335 20.6402 21.8227C20.3764 21.9119 20.0968 21.9451 19.8194 21.92C16.7423 21.5856 13.7864 20.5342 11.1894 18.85C8.77327 17.3147 6.72478 15.2662 5.18945 12.85C3.49942 10.2412 2.44769 7.271 2.11944 4.18001C2.09446 3.90347 2.12732 3.62477 2.21595 3.36163C2.30457 3.09849 2.44702 2.85669 2.63421 2.65163C2.82141 2.44656 3.04925 2.28271 3.30324 2.17053C3.55722 2.05834 3.83179 2.00027 4.10945 2.00001H7.10945C7.59475 1.99523 8.06524 2.16708 8.43321 2.48354C8.80118 2.79999 9.04152 3.23945 9.10944 3.72001C9.23607 4.68007 9.47089 5.62273 9.80945 6.53001C9.94399 6.88793 9.97311 7.27692 9.89335 7.65089C9.8136 8.02485 9.62831 8.36812 9.35944 8.64001L8.08945 9.91001C9.513 12.4136 11.5859 14.4865 14.0894 15.91L15.3594 14.64C15.6313 14.3711 15.9746 14.1859 16.3486 14.1061C16.7225 14.0263 17.1115 14.0555 17.4694 14.19C18.3767 14.5286 19.3194 14.7634 20.2794 14.89C20.7652 14.9585 21.2088 15.2032 21.526 15.5775C21.8431 15.9518 22.0116 16.4296 21.9994 16.92Z" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+                                </div>
+                                <div class="phoneNum">
+                                     <a href="tel:+9180507 39493">+91 80507 39493</a>
+                                     <small>call us to confirm your booking.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="displayFloatingBox">Engligh <img src="./images/g-translate.svg" alt="language" class="lang"/></a>
+                        <div class="floatingBoxes">
+                            <a href="#" class="langBox">
+                                <p>
+                                    English
+                                    <span>English US</span>
+                                </p>
+                                <small><img src="./images/check.svg" alt="selectd"></small>
+                            </a>
+                            <a href="#" class="langBox">
+                                <p>
+                                    हिन्दी
+                                    <span>Hindi India</span>
+                                </p>
+                                <small></small>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="loginbtnBox">
+                <a href="#">
+                    <img src="./images/people-icon.svg" alt="login">
+                    <span>signup/login</span>
+                </a>
+            </div>
+        </nav>
+     </header>
+     <!-- offcanvas Header -->
+     <header class=" offcanvas offcanvas-start headerOffcanvas" tabindex="-1" id="headerOffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </nav>
-    <section class="homeBanner">
+        <div class="offcanvas-body">
+            <div class="navLinkBox">
+                <ul>
+                    <li><a href="#">Business with us</a></li>
+                    <li><a href="#">List your Hotel</a></li>
+                    <li>
+                        <a href="#" class="displayFloatingBox">Connect US <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                        <div class="floatingBoxes">
+                            <div class="connectBox">
+                                <div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M21.9994 16.92V19.92C22.0006 20.1985 21.9435 20.4742 21.832 20.7294C21.7204 20.9845 21.5567 21.2136 21.3515 21.4019C21.1463 21.5901 20.904 21.7335 20.6402 21.8227C20.3764 21.9119 20.0968 21.9451 19.8194 21.92C16.7423 21.5856 13.7864 20.5342 11.1894 18.85C8.77327 17.3147 6.72478 15.2662 5.18945 12.85C3.49942 10.2412 2.44769 7.271 2.11944 4.18001C2.09446 3.90347 2.12732 3.62477 2.21595 3.36163C2.30457 3.09849 2.44702 2.85669 2.63421 2.65163C2.82141 2.44656 3.04925 2.28271 3.30324 2.17053C3.55722 2.05834 3.83179 2.00027 4.10945 2.00001H7.10945C7.59475 1.99523 8.06524 2.16708 8.43321 2.48354C8.80118 2.79999 9.04152 3.23945 9.10944 3.72001C9.23607 4.68007 9.47089 5.62273 9.80945 6.53001C9.94399 6.88793 9.97311 7.27692 9.89335 7.65089C9.8136 8.02485 9.62831 8.36812 9.35944 8.64001L8.08945 9.91001C9.513 12.4136 11.5859 14.4865 14.0894 15.91L15.3594 14.64C15.6313 14.3711 15.9746 14.1859 16.3486 14.1061C16.7225 14.0263 17.1115 14.0555 17.4694 14.19C18.3767 14.5286 19.3194 14.7634 20.2794 14.89C20.7652 14.9585 21.2088 15.2032 21.526 15.5775C21.8431 15.9518 22.0116 16.4296 21.9994 16.92Z" stroke="#212121" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+                                </div>
+                                <div class="phoneNum">
+                                     <a href="tel:+9180507 39493">+91 80507 39493</a>
+                                     <small>call us to confirm your booking.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="displayFloatingBox">Engligh <img src="./images/g-translate.svg" alt="language" class="lang"/></a>
+                        <div class="floatingBoxes" style="top: 30px;">
+                            <a href="#" class="langBox">
+                                <p>
+                                    English
+                                    <span>English US</span>
+                                </p>
+                                <small><img src="./images/check.svg" alt="selectd"></small>
+                            </a>
+                            <a href="#" class="langBox">
+                                <p>
+                                    हिन्दी
+                                    <span>Hindi India</span>
+                                </p>
+                                <small></small>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </header>
+     <section class="datepickerSection">
         <div class="container">
-            <div class="banner-slider">
-                <div class="item col-12">
-                    <a href="#">
-                       <img src="./images/banner-1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item col-12">
-                    <a href="#">
-                       <img src="./images/banner-2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="item active col-12">
-                    <a href="#">
-                        <img src="./images/banner-3.jpg" alt="">
-                     </a>
-                </div>
-                <div class="item col-12">
-                    <a href="#">
-                        <img src="./images/banner-4.jpg" alt="">
-                     </a>
-                </div>
-                <div class="item col-12">
-                    <a href="#">
-                        <img src="./images/banner-5.jpg" alt="">
-                     </a>
-                </div>
-                <div class="item col-12">
-                    <a href="#">
-                        <img src="./images/banner-6.jpg" alt="">
-                     </a>
-                </div>
-                <div class="item col-12">
-                    <a href="#">
-                        <img src="./images/banner-7.jpg" alt="">
-                     </a>
+            <h1>Over 3143+ hotels  in 399+  cities across India</h1>
+            <div class="datepickerBox">
+                <div class="pickerInputs">
+                    <div class="cityName">
+                        <input type="text" placeholder="Serach by city or hotel"/>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0c17.7 0 32 14.3 32 32l0 34.7C368.4 80.1 431.9 143.6 445.3 224l34.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-34.7 0C431.9 368.4 368.4 431.9 288 445.3l0 34.7c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.7C143.6 431.9 80.1 368.4 66.7 288L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l34.7 0C80.1 143.6 143.6 80.1 224 66.7L224 32c0-17.7 14.3-32 32-32zM128 256a128 128 0 1 0 256 0 128 128 0 1 0 -256 0zm128-80a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
+                            Aroud Me
+                        </button>
+                    </div>
+                    <div class="checkinInput">
+                        <input type="text" id="checkin" placeholder="Check-in Date" autocomplete="off">
+                        <input type="text" id="checkout" placeholder="Check-out Date" autocomplete="off">
+                    </div>
+                    <div class="guestInput">
+                        <button class="dispalyinputfigure">1 Room, 2 Guests</button>
+                        <div class="inputfigure">
+                            <div class="figurebox">
+                                <h5>
+                                    Adults
+                                    <small>(Above 12 Years)</small>
+                                </h5>
+                                <div class="values">
+                                    <button>-</button>
+                                    <input type="number" class="form-control">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="figurebox">
+                                <h5>
+                                    Children
+                                    <small>(Below 12 Years)</small>
+                                </h5>
+                                <div class="values">
+                                    <button>-</button>
+                                    <input type="number" class="form-control">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="figurebox">
+                                <h5>
+                                    Rooms
+                                    <small>(Below 12 Years)</small>
+                                </h5>
+                                <div class="values">
+                                    <button>-</button>
+                                    <input type="number" class="form-control">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="searchBtn">
+                        <button>search</button>
+                    </div>     
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Explore category -->
-    <section class="container-fluid categories-box">
-        <div class="container">
-            <h2>Explore categories</h2>
+        <div class="container explByCity">
+            <h2>Explore by Cities</h2>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-university" aria-hidden="true"></i></span>Finance</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-plane" aria-hidden="true"></i></span>Travel Insurance Company</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-car" aria-hidden="true"></i></span>Automobiles</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa-regular fa-gem"></i></span>Jewelry Store</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-television" aria-hidden="true"></i></span>Electronics & Technology</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-bolt" aria-hidden="true"></i></span>Energy Supplier</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-home" aria-hidden="true"></i></span>Real Estate Agents</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-bed" aria-hidden="true"></i></span>Bedroom Furniture Store</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-cogs" aria-hidden="true"></i></span>Services</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-ambulance" aria-hidden="true"></i></span>Health Care</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa-brands fa-btc"></i></span>Crypto-Currency</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 category-item">
-                    <div class="category-brand container">
-                        <div class="d-flex justify-content-cemter align-items-center text-align-center">
-                            <a href="./sub-category.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>Education</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="more-btn">
-                <button onclick = "window.location.href='./categories.html';">Explore More</button>
-            </div>
-        </div>
-    </section>
-    <!-- tranding deals -->
-    <section class="topRatedStore">
-       <div class="container">
-            <h2>Top Rated Stores</h2>
-            <div class="row">
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="#" class="cityBox">
+                        <img src="./images/delhi.jpg" alt="delhi">
+                        <div>
+                            <p>Delhi</p>
+                            <span>345 Hotels</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="#" class="cityBox">
+                        <img src="./images/mumbai.jpg" alt="mumbai">
+                        <div>
+                            <p>Mumbai</p>
+                            <span>345 Hotels</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="#" class="cityBox">
+                        <img src="./images/kolkata.png" alt="kolkata">
+                        <div>
+                            <p>Kolkata</p>
+                            <span>345 Hotels</span>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a href="#" class="cityBox">
+                        <img src="./images/chennai.jpg" alt="chennai">
+                        <div>
+                            <p>Chennai</p>
+                            <span>345 Hotels</span>
                         </div>
                     </a>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <a class="toprated" href="#">
-                        <div class="topratedTop">
-                            <img src="./images/Amazon_Logo.webp" alt="amazon">
-                        </div>
-                        <div class="topRatedBottom">
-                            <div class="storeName">
-                                <span>code</span>
-                                <span>amazon</span>
-                            </div>
-                            <div class="discount">
-                                40% OFF
-                            </div>
-                            <div class="description">
-                                25% Off $20+ Regular Priced Items at Papa Murphy's
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-       </div>
-    </section>
-    <!-- ***********************************Featured Stores****************************************************** -->
-    <section class="container-fluid featured-store">
-        <div class="container">
-            <h2>Featured Stores</h2>
-           <div class="row row-cols-2">
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/amazon-promo-codes.png" alt=""></a>
-                        <a href="" class="store-name">Amazon</a>
-                    </div>
-                </div>
-                <!-- ***************** -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/domestika.jpg" alt=""></a>
-                        <a href="" class="store-name">Domestika</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/libas-coupon-codes-1.jpg" alt=""></a>
-                        <a href="" class="store-name">Libas</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/Titan-coupon-codes.jpg" alt=""></a>
-                        <a href="" class="store-name">Titan</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/Tripadvisor-coupon-codes-1.jpg" alt=""></a>
-                        <a href="" class="store-name">Tripadvisor</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/dell-coupon-codes-1-1.jpg" alt=""></a>
-                        <a href="" class="store-name">Dell Technology</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/Ajio-coupon-codes.jpg" alt=""></a>
-                        <a href="" class="store-name">Ajio</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/thesleepcompany-coupon-codes-1-1.jpg" alt=""></a>
-                        <a href="" class="store-name">The SleepCompany</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/buywow-coupon-codes.png" alt=""></a>
-                        <a href="" class="store-name">Wow Science</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/Muscletech-3.jpg" alt=""></a>
-                        <a href="" class="store-name">Muscletech</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/norton-coupon-codes-3.jpg" alt=""></a>
-                        <a href="" class="store-name">Norton</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-                <div class="col-lg-2 col-md-3 col-sm-6 featured-box">
-                    <div class="featured-item">
-                        <a href=""><img src="./images/pdfelement-coupon-codes-2.jpg" alt=""></a>
-                        <a href="" class="store-name">PDF Element</a>
-                    </div>
-                </div>
-                <!-- ********************* -->
-           </div>
-           <div class="d-flex">
-                <div class="more-btn ms-auto">
-                    <button onclick="window.location.href='./categories.html';">Exprore More</button>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ***********************************Top Online Stores****************************************************** -->
-    <section class="online-store">
-        <div class="container">
-            <h2>Top Online Stores</h2>
-            <div class="row row-cols-2">
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6">
-                    <a href="#" class="pickedStore">
-                        <div class="imgBox">
-                            <img src="./images/Samsung_Logo.webp" alt="samsung">
-                        </div>
-                        <div class="dealCout">
-                            41 Deals
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="d-flex">
-                <div class="more-btn ms-auto">
-                    <button onclick="window.location.href='./categories.html';">Exprore More</button>
-                </div>
-            </div>
-         </div>
-    </section>
-    <!-- Tranding Blog -->
-    <section class="container-fluid tranding">
-        <div class="container">
-            <div class="row tranding-blog">
-                <h2>Tranding Blogs</h2>
-                <div class="col-lg-3 col-md-6 col-sm-12 blog-box">
-                    <div class="blog-item shadow-sm">
-                        <a href="./blog-details.html"><img src="./images/amazzon-sale.webp" alt=""></a>
-                        <a href="./blog-details.html"><p>List Of Amazon Upcoming Sale July 2023 | Prime Day Sale 50% OFF on...</p></a>
-                        <span class="date">5-Aug-2023</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 blog-box">
-                    <div class="blog-item shadow-sm">
-                        <a href="./blog-details.html"><img src="./images/apple.webp" alt=""></a>
-                        <a href="./blog-details.html"><p>Latest Apple Student Discount 2023 | Steps to Claim This Offer and...</p></a>
-                        <span class="date">5-Aug-2023</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 blog-box">
-                    <div class="blog-item shadow-sm">
-                        <a href="./blog-details.html"><img src="./images/yulu-bike.webp" alt=""></a>
-                        <a href="./blog-details.html"><p>Yulu Bike Price And Rental Charges | Find All Details To Book Now...</p></a>
-                        <span class="date">5-Aug-2023</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 blog-box">
-                    <div class="blog-item shadow-sm">
-                        <a href="./blog-details.html"><img src="./images/top-10-hotel-booking.webp" alt=""></a>
-                        <a href="./blog-details.html"><p>Top 10 Hotel Booking Sites In India | Why You Should Choose Them?..</p></a>
-                        <span class="date">5-Aug-2023</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 blog-box">
-                    <div class="blog-item shadow-sm">
-                        <a href="./blog-details.html"><img src="./images/student-offer.webp" alt=""></a>
-                        <a href="./blog-details.html"><p>Emirates Student Offer | Details On Various Discount, T&C And More...</p></a>
-                        <span class="date">5-Aug-2023</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 blog-box">
-                    <div class="blog-item shadow-sm">
-                        <a href="./blog-details.html"><img src="./images/Woodland-Heels-For-Ladies.jpg.webp" alt=""></a>
-                        <a href="./blog-details.html"><p>Woodland Heels For Ladies: Catch The Latest Deals On Exclusive Designs...</p></a>
-                        <span class="date">5-Aug-2023</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 blog-box">
-                    <div class="blog-item shadow-sm">
-                        <a href="./blog-details.html"><img src="./images/Buy-jiobook-online.jpg.webp" alt=""></a>
-                        <a href="./blog-details.html"><p>Buy Jiobook Online: Get Details Of Price, Specifications, & Best Offers...</p></a>
-                        <span class="date">5-Aug-2023</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 blog-box">
-                    <div class="blog-item shadow-sm">
-                        <a href="./blog-details.html"><img src="./images/croma-republic-day-sale.jpg.webp" alt=""></a>
-                        <a href="./blog-details.html"><p>Croma Republic Day Sale |Avail Of The Latest Bank Offers, Discount On...</p></a>
-                        <span class="date">5-Aug-2023</span>
-                    </div>
-                </div>
-            </div>
-            <div class="more-btn">
-                <button onclick = "window.location.href='./all-blogs.html';">More Blogs</button>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer-box px-lg-5 px-md-3 px-2">
-        <div class="row mx-auto">
-            <div class="col-lg-5 col-md-12 col-sm-12 mb-3 about-scoop footer-itmes">
-                <h1 class="footer-logo">Saving<span>Only</span></h1>
-                <p>Greetings! Welcome to savingonly.com, your ultimate destination for an extensive collection of coupons and deals. Discover unbeatable prices on top brands across various products and services. Keep an eye out for more updates!</p>
-                <div class="social">
-                    <a href="">
-                       <span>
-                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                               <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                           </svg>
-                       </span>
-                   </a>
-                    <a href="">
-                       <span>
-                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                               <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                           </svg>
-                       </span>
-                   </a>
-                    <a href="">
-                       <span>
-                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                           </svg>
-                       </span>
-                   </a>
-                    <a href="">
-                       <span>
-                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
-                               <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
-                           </svg> 
-                       </span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-12 mb-3 footer-links">
-               <h3>NAVIGATIONS</h3>
-               <a href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                   <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                   <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                 </svg> Home</a>
-               <a href="./about.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                   <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                   <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                 </svg> About</a>
-               <a href="./all-blogs.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                   <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                   <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                 </svg> Blog</a>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-12 mb-3 footer-links">
-                <h3>QUICK LINKS</h3>
-                <a href="./review-cat.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                   <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                   <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                 </svg> Reviews</a>
-                <a href="./coupons.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                   <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                   <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                 </svg> Coupons</a>
-                <a href="./categories.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
-                   <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
-                   <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
-                 </svg> Categories</a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-12 mb-3 footer-links">
-                <h3>Stay Updated</h3>
-                <div class="subscribe">
-                    <div class="subscribe-item">
-                        <form action="">
-                            <input type="text" placeholder="Your Email">
-                            <button>Subscribe</button>
-                        </form>
-                    </div>
-                    <span>You can opt out of our newsletters at any time. See our privacy policy.</span>
-                </div>
-            </div>
-        </div> 
-    </footer>
-    <div class="container-fluid copyright">
-        <div>
-            <div class="row text-center px-md-5 py-2">
-              <p class="copyright-para mb-2">savingonly earns affiliate commisions on qualifying purchases as an amazon associate. "Amazon, and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
-              <p class="lovtxt">
-                Made with love ❤️ from UNited Kingdom</p>
-            </div>
-        </div>
-    </div>
-     <!-- *******************************copyright section****************************** -->
-    <div>
-        <a href="#top"><button id="scrollToTop"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button></a>
-    </div>
-          
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-          <script>
-            $(document).ready(function() {
-             $('.banner-slider').slick({
-                 autoplay: true,
-                 autoplaySpeed: 1000,
-                 speed: 600,
-                 draggable: true,
-                 infinite: true,
-                 slidesToShow: 1,
-                 slidesToScroll: 1,
-                 arrows: true,
-                 dots: false,
-                 responsive: [
-                     {
-                     breakpoint: 991,
-                     settings: {
-                         slidesToShow: 1,
-                         slidesToScroll: 1,
-                     }
-                     },
-                     {
-                         breakpoint: 850,
-                         settings: {
-                         slidesToShow: 1,
-                         slidesToScroll: 1,
-                         }
-                     }
-                 ]
-             });
-         }); 
-  </script>
-      <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
-      <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
-      <script src="./JS/global.js"></script>
+     </section>
+     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+     <script src="./JS/global.js"></script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const button = document.querySelector(".dispalyinputfigure");
+            const inputFigure = document.querySelector(".inputfigure");
+
+            button.addEventListener("click", function (event) {
+                event.stopPropagation(); 
+                inputFigure.style.display = (inputFigure.style.display === "block") ? "none" : "block";
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!inputFigure.contains(event.target) && event.target !== button) {
+                    inputFigure.style.display = "none";
+                }
+            });
+        });
+    </script>
+     <script>
+        $(function () {
+            $("#checkin").datepicker({
+                dateFormat: "yy-mm-dd",
+                minDate: 0, 
+                onSelect: function (selectedDate) {
+                    var minCheckoutDate = new Date(selectedDate);
+                    minCheckoutDate.setDate(minCheckoutDate.getDate() + 1); 
+                    $("#checkout").datepicker("option", "minDate", minCheckoutDate);
+                }
+            });
+
+            $("#checkout").datepicker({
+                dateFormat: "yy-mm-dd",
+                minDate: 1 
+            });
+        });
+    </script>
 </body>
 </html>

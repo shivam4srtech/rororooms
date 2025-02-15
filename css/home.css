@@ -1,439 +1,248 @@
-/* ***************Explore categori**********************/
-*{
-    font-family: 'Montserrat', sans-serif;
+.datepickerSection{
+ background-color: #e8f8fd;
+ padding-top: 2rem;
 }
-.homeBanner{
-    padding: 6rem 1rem 3rem 1rem;
+.datepickerSection h1{
+    color: #002970;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1.4rem;
 }
-.homeBanner .banner-slider{
-    border-radius: 4px;
-}
-.homeBanner .banner-slider .item{
-    border-radius: 4px;
- }
-.homeBanner .banner-slider .item img{
-   width: 100%;
-   display: block;
-   margin: auto;
-   object-fit: cover;
-   border: 1px solid #999;
-   border-radius: 4px;
-}
-.slick-prev:before, .slick-next:before{
-    color: #222;
-    font-size: 1.4rem;
-}
-@media(max-width: 991px){
-    .banner-slider .slick-arrow{
-        display: none !important;
-    }
- }
 @media(max-width: 600px){
-    .homeBanner{
-        padding: 6rem 1rem 2rem 1rem;
+    .datepickerSection h1{
+       font-size: 1.4rem;
     }
-}
-/* category */
-.categories-box{
-    background-color: #f1f1e8;
-    padding: 2.2rem;
+    .datepickerSection{
+        padding-top: 1rem;
+     }
 }
 .container{
-    max-width: 1250px;
+    max-width: 1200px;
 }
-.categories-box h2{
-    font-weight: 600;
-    margin-bottom: 1.4rem;
-    font-size: 1.6rem;
+.datepickerSection{
+    background-color: #e8f8fd;
+    min-height: 100vh;
 }
-.category-item{
-    margin-bottom: 1rem;
-}
-.category-brand{
-    border: 1px solid #ece7e7;
-    border-radius: 3.5px;
-    padding: 1rem;
-    background-color: #ffffff;
-    min-height: 4.5rem;
-}
-.category-brand:hover{
-    background-color: #f2f3f6;
-    box-shadow: 5px 5px 10px #e5e3e3;
-}
-.category-brand a{
-    text-decoration: none;
-    color: #232323;
-    font-weight: 500;
-    font-size: 1rem;
-    display: block;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-.category-brand span{
-    font-weight: 600;
-    margin-right: .8rem;
-    font-size: 1.6rem;
-}
-.more-btn{
-    margin-top: 1.4rem;
-}
-.more-btn button{
-    margin: auto;
-    display: block;
-    background-color: #18702cb5;
-    border-radius: 1.625rem;
-    color: #222;
-    outline: none;
-    border: none;
-    padding: .8rem; 
-    width: 11rem;
-    font-weight: 600;
-}
-.more-btn button:hover{
-    background-color: #18702c78;
-    transition: .3s ease;
-}
-@media(max-width:600px){
-    .categories-box {
-        padding: 1rem;
-    }
-}
-/* Tranding Blog */
-.tranding{
-    background-color: #f6f6f6;
-    padding: 4rem;
-    font-family: 'Montserrat', sans-serif;
-}
-.tranding-blog h2{
-    font-weight: 600;
-    margin-bottom: 2rem;
-    font-size: 1.6rem;
-}
-.blog-box{
-    margin-bottom: 2rem;
-}
-.blog-item{
-    border-radius: 5px;
-    background-color: #ffffff;
-    padding: 0px 0px 1rem 0px;
-}
-.blog-item img{
-    width: 100%;
-    object-fit: contain;
-    border-radius: 5px 5px 0px 0px; 
-}
-.blog-item a{
-    text-decoration:  none;
-}
-.blog-item p{
-    margin-top: 1rem;
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 0px .5rem;
-    margin-bottom: 0px;
-    color: #222;
-    line-height: 1.4;
-    min-height: 4rem;
-    font-size: .95rem;
-}
-.blog-item .date{
-    font-weight: 500;
-    padding: 0px .5rem;
-    font-size: .9rem;
-    color: #999
-}
-@media(max-width: 600px){
-    .tranding{
-        padding: 3rem 1rem;
-    }
-}
-/* *****************************Featured-Store******************************************* */
-.featured-store{
-    background-color: #dceeff;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-.featured-store h2{
-    color: #000;
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 1.6rem;
-}
-@media(max-width:768px){
-    .featured-store h2{
-        text-align: center;
-        font-size: 1.8rem;
-    }
-}
-.featured-box{
-    margin-bottom: 1.8rem;
-}
-.featured-item img{
-    border: 1px solid #dedbdb;
-    max-width: 100%;
-    object-fit: contain;
-    display: block;
-    margin: auto;
-}
-.featured-item img:hover{
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.featured-item .store-name{
-    display: block;
-    margin: auto;
-    text-align: center;
-    margin-top: .8rem;
-    color: #3c3c3d;
-    font-weight: 500;
-}
-/* ************************Top Online Store********************************** */
-.online-store{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-.online-store h2{
-    color: #000;
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 1.6rem;
-}
-@media(max-width:768px){
-    .online-store h2{
-        text-align: center;
-        font-size: 1.8rem;
-    }
-}
-.online-box{
-    margin-bottom: 2.4rem;
-}
-.online-item img{
-    max-width: 90%;
-    max-height: 3.5rem;
-    display: block;
-    margin: auto;
-    border-radius: 4px;
-    object-fit: contain;
-    box-shadow: 5px 5px 10px #bdbbbb;
-}
-/* **********************************Subscribe**********************************/
-.subscribe{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    background-color: #efefef;
-}
-.subscribe-item h3{
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: #222222;
-    line-height: 1.4;
-}
-.subscribe-item form{
-    border: 1px solid #bab6b6;
-    display: flex;
-    margin: 2rem auto;
-    width: 60%;
-    padding: .5rem;
-    border-radius: 3px;
-}
-@media(max-width:1000px){
-    .subscribe-item form{
-        width: 100%;
-    }
-}
-.subscribe-item form input{
-    width: 78%;
-    border: none;
-    outline: none;
-    padding: .5rem 1rem;
-    color: #111111;
-}
-.subscribe-item form button{
-    width: 25%;
-    background-color: #18702c;
-    color: #fff;
-    padding: .5rem;
-    border-radius: 0 4px 4px 0;
-    border: none;
-    outline: none;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: .8rem;
-}
-@media(max-width: 600px){
-    .subscribe-item h3 {
-        font-size: 1.3rem;
-        line-height: 1.4;
-    }
-}
-@media(max-width:500px){
-    .subscribe-item form button{
-        width: 30%;
-        font-size: .75rem;
-    }
-    .subscribe-item form input{
-        font-size: .8rem;
-    }
-
-}
-@media(max-width:768px){
-    body h2{
-       font-size: 1.4rem;
-        text-align: center;
-    }
-}
-/* tranding deals */
-
-
-.store-product-logo {
-    width: 130px;
-    padding: 5px 20px;
-    border-radius: 30px;
+.datepickerSection .datepickerBox{
+    padding: 20px 0 16px 20px;
     background-color: #fff;
-    text-align: center;
-    height: auto;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, .1);
-    margin: -32px auto 10px auto;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.storeInfo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.storeInfo p{
-    font-weight: 500;
-    letter-spacing: .5px;
-    color: #222;
-    line-height: 1.5;
-    font-size: .85rem;
-    display: -webkit-box;
-    line-clamp: 1;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-.storeInfo span{
-   font-weight: 500;
-   padding: .5rem 1.2rem;
-   color: #fff;
-   display: inline-block;
-   margin-top: .5rem;
-   margin-bottom: .8rem;
-   border-radius: 1.76rem;
-   background-color: #18702c;
-   font-size: .95rem;
-}
-.boxFooter{
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #d8d6d6;
-    padding-top: .2rem;
-}
-.boxFooter span{
-   color: #999;
-   font-size: .74rem;
-   font-weight: 500;
-}
-.boxFooter span img{
-    margin-right: .2rem;
- }
- /* topRatedStore */
- .topRatedStore{
-    padding: 3rem 0;
- }
- .topRatedStore h2{
-    font-weight: 600;
-    margin-bottom: 1.4rem;
-    font-size: 1.6rem;
- }
- .topRatedStore .toprated{
-   border: 1px solid #ccc;
-   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-   border-radius: 4px;
+.datepickerSection .datepickerBox .pickerInputs{
    display: flex;
-   flex-direction: column;
+   gap: 20px;
+   min-height: 50px;
+}
+.datepickerSection .datepickerBox .pickerInputs .cityName{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #cacaca;
+    padding-right: .5rem;
+ }
+
+ .datepickerSection .pickerInputs input{
+    outline: none;
+    padding: .5rem;
+    color: #000;
+    font-weight: 600;
+    letter-spacing: .5px;
+ }
+ .datepickerSection .pickerInputs input::placeholder{
+    color: #000;
+    font-weight: 600;
+    letter-spacing: .5px;
+ }
+ .datepickerSection .pickerInputs .cityName input{
+   width: 300px;
+   border: none;
+ }
+ .datepickerSection .pickerInputs .checkinInput input{
+    max-width: 160px;
+    padding: .5rem 0;
+    border: none;
+    outline: none;
+  }
+  .datepickerSection .datepickerBox .pickerInputs .cityName button{
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-width: 82px;
+    max-width: 100px;
+    max-height: 30px;
+    padding: 3px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: .7rem;
+ }
+ .datepickerSection .datepickerBox .pickerInputs .cityName button svg{
+    width: 14px;
+    height: 14px;
+    margin-right: .3rem;
+ }
+ .datepickerSection .datepickerBox .pickerInputs .checkinInput{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #cacaca;
+ }
+ .datepickerSection .datepickerBox .pickerInputs .guestInput{
+    display: flex;
+    align-items: center;
+    position: relative;
+ }
+ .datepickerSection .datepickerBox .pickerInputs .guestInput button{
+    color: #000;
+    font-weight: 600;
+    letter-spacing: .5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+ }
+ .datepickerSection .datepickerBox .pickerInputs .searchBtn{
+    display: flex;
+    align-items: center;
+ }
+ .datepickerSection .datepickerBox .pickerInputs .searchBtn button{
+    border: none;
+    outline: none;
+    border-radius: 1.76rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    padding: .65rem 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 1rem;
+ }
+ .datepickerSection .datepickerBox .pickerInputs .guestInput .inputfigure{
+   position: absolute;
+   top: 60px;
+   background-color: #fff;
+   left: 0;
+    background: #fff;
+    width: 18rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    z-index: 3001;
+    border: 1px solid #ddd;
+    display: none;
+ }
+ .pickerInputs .guestInput .inputfigure .figurebox{
+   display: flex;
+   justify-content: space-between;
    margin-bottom: 1rem;
  }
- .topRatedStore .toprated:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ .pickerInputs .guestInput .inputfigure .figurebox h5{
+    font-weight: 600;
+    font-size: .8rem;
+    color: #000;
   }
- .topRatedStore .toprated .topratedTop{
+  .pickerInputs .guestInput .inputfigure .figurebox h5 small{
+  font-size: .7rem;
+  font-weight: 500;
+  display: block;
+  }
+  .pickerInputs .guestInput .inputfigure .figurebox .values{
    display: flex;
    align-items: center;
-   justify-content: center;
-   border-bottom: 1px solid #ccc;
-   max-height: 120px;
 }
- .topRatedStore .toprated .topratedTop img{
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  }
-  .topRatedStore .toprated .topRatedBottom {
-   padding: .8rem .5rem;
-}
-  .topRatedStore .toprated .topRatedBottom .storeName{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: .5rem;
-}
-.topRatedStore .toprated .topRatedBottom .storeName span:nth-of-type(1){
-   color: #006de4;
-   font-weight: 600;
-   font-size: .8rem;
-   text-transform: uppercase;
-}
-.topRatedStore .toprated .topRatedBottom .storeName span:nth-of-type(2){
-    color: #5C5C5C;
-    font-weight: 600;
-    font-size: .8rem;
-    text-transform: capitalize;
+.pickerInputs .guestInput .inputfigure .figurebox .values input{
+    max-width: 50px;
+    box-shadow: none;
+    border-radius: 0;
+    height: 35px;
+    border: 1px solid #6c757d;
+    border-left: none;
+    border-right: none;
  }
- .topRatedStore .toprated .topRatedBottom .discount{
+ .pickerInputs .guestInput .inputfigure .figurebox .values button{
+    width: 2.5rem;
+    height: 35px;
+    font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6c757d;
+ }
+ .pickerInputs .guestInput .inputfigure .figurebox .values button:nth-of-type(1){
+   border-radius: 10px  0 0 10px;
+ }
+ .pickerInputs .guestInput .inputfigure .figurebox .values button:nth-of-type(2){
+    border-radius: 0  10px 10px 0;
+  }
+  @media(max-width:991px){
+    .datepickerSection .datepickerBox .pickerInputs {
+       flex-direction: column;
+    }
+    .datepickerSection .datepickerBox .pickerInputs .cityName {
+      border-right: none;
+    }
+    .datepickerSection .datepickerBox .pickerInputs .checkinInput {
+        border-right: none;
+    }
+    .datepickerSection .datepickerBox .pickerInputs .searchBtn {
+      justify-content: center;
+    }
+    .datepickerSection .datepickerBox .pickerInputs .guestInput .inputfigure {
+        top: 30px;
+    }
+  }
+  @media(max-width:500px){
+    .datepickerSection .pickerInputs .cityName input {
+        width: 250px;
+        padding-left: 0;
+    }
+    .datepickerSection .datepickerBox .pickerInputs .cityName {
+       justify-content: space-between;
+    }
+    .container {
+        padding: .3rem;
+    }
+  }
+  .explByCity{
+    margin-top: 2rem;
+  }
+  .explByCity h2{
     font-weight: 600;
-    color: #5c5c5c;
-    font-size: 1.1rem;
-    line-height: 1.4;
-    margin-bottom: .5rem;
-}
-.topRatedStore .toprated .topRatedBottom .description{
-    font-weight: 500;
-    color: #5c5c5c;
-    font-size: .8rem;
-    line-height: 1.4;
-}
-.online-store .pickedStore{
-    background-color: #fff;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    padding: .5rem;
-}
-.online-store .pickedStore .imgBox{
-   max-height: 100px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border-radius: 6px;
-   margin-bottom: .5rem;
- }
-.online-store .pickedStore .imgBox img{
-   max-width: 100%;
+  }
+  .cityBox{
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    display: block;
+    color: #000;
+    margin-bottom: 1.5rem;
+  }
+  .cityBox img{
+   border-radius: 14px;
    object-fit: contain;
-   max-height: 100%;
-}
-.online-store .pickedStore .dealCout{
-   text-align: center;
+   max-width: 100%;
+   display: block;
+   margin: auto;
+   margin-bottom: .5rem;
+  }
+  .cityBox p{
    font-weight: 600;
-   color: #5c5c5c;
    font-size: .9rem;
- }
+   margin-bottom: .2rem;
+   }
+   .cityBox span{
+    font-weight: 500;
+    font-size: .7rem;
+    }
