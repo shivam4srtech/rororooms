@@ -1,0 +1,527 @@
+.stickySearch{
+    background: linear-gradient(135deg, #2c74c9, #1b4b89, #74a9f7);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+body{
+    background-color: whitesmoke;
+}
+.container{
+    max-width: 1200px;
+}
+.stickySearch .stichySearchBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+ .ui-datepicker{
+  z-index: 100 !important;
+  top: 180px !important;
+}
+.stichySearchBox .inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.stichySearchBox .inputBox .form-control{
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    border: none;
+    text-transform: capitalize;
+    display: block;
+    height: 2.8rem;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: none;
+}
+.stichySearchBox .inputBox .form-control::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+}
+.stichySearchBox .inputBox .location{
+    min-width: 300px
+}
+.stichySearchBox .inputBox input{
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    border: none;
+    text-transform: capitalize;
+    display: block;
+    height: 2.8rem;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: none;
+}
+.stichySearchBox .inputBox span{
+    line-height: normal;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding-bottom: 0.5rem;
+    padding-left: 0.2rem;
+    letter-spacing: .5px;
+}
+.stichySearchBox .inputBox span{
+    line-height: normal;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding-bottom: 0.5rem;
+    padding-left: 0.2rem;
+    letter-spacing: .5px;
+}
+.stickySearch .searchBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stickySearch .searchBtn button{
+    line-height: normal;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(22, 107, 211) !important;
+    text-transform: uppercase !important;
+    border-radius: 10px !important;
+}
+/* guest input */
+.stichySearchBox .inputBox .dispalyinputfigure{
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    border: none;
+    text-transform: capitalize;
+    display: block;
+    height: 2.8rem;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: none;
+
+}
+ .guestInput{
+    position: relative;
+ }
+ .guestInput button{
+    color: #000;
+    font-weight: 600;
+    letter-spacing: .5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+ }
+
+
+  .guestInput .inputfigure{
+   position: absolute;
+   top: 10px;
+   background-color: #fff;
+   left: 0;
+    background: #fff;
+    width: 18rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    z-index: 300;
+    border: 1px solid #ddd;
+    display: none;
+
+ }
+  .guestInput .inputfigure .figurebox{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+ }
+  .guestInput .inputfigure .figurebox h5{
+    font-weight: 600;
+    font-size: .8rem;
+    color: #000;
+  }
+   .guestInput .inputfigure .figurebox h5 small{
+  font-size: .7rem;
+  font-weight: 500;
+  display: block;
+  }
+   .guestInput .inputfigure .figurebox .values{
+   display: flex;
+   align-items: center;
+}
+ .guestInput .inputfigure .figurebox .values input{
+    max-width: 50px !important;
+    min-width: 50px !important;
+    box-shadow: none;
+    border-radius: 0;
+    height: 35px;
+    border: 1px solid #6c757d;
+    border-left: none;
+    border-right: none;
+ }
+  .guestInput .inputfigure .figurebox .values button{
+    width: 2.5rem;
+    height: 35px;
+    font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6c757d;
+ }
+  .guestInput .inputfigure .figurebox .values button:nth-of-type(1){
+   border-radius: 10px  0 0 10px;
+ }
+  .guestInput .inputfigure .figurebox .values button:nth-of-type(2){
+    border-radius: 0  10px 10px 0;
+  }
+  @media(max-width: 991px){
+    .stickySearch .stichySearchBox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .stichySearchBox .inputBox input.form-control{
+       min-width: 400px;
+    }
+    .guestInputBox{
+        min-width: 400px;
+    }
+  }
+  @media (max-width: 450px) {
+    .stichySearchBox .inputBox input.form-control {
+        min-width: 100%;
+    }
+    .stichySearchBox .inputBox {
+        width: 100%;
+    }
+    .guestInputBox{
+        min-width: 100%;
+    }
+}
+.sortBy{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 0.8rem 0.6rem -0.6rem;
+    padding: .5rem 0;
+}
+.sortBy .sortByBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sortBy .sortByBox ul{
+    display: flex;
+    padding-left: 0;
+    gap: 15px;
+}
+.sortBy .sortByBox ul li{
+   list-style-type: none;
+}
+.sortBy .sortByBox ul li a{
+    list-style-type: none;
+    font-weight: 600;
+    border: 1px solid #002970;
+    color: #002970;
+    font-size: .8rem;
+    padding: .5rem .6rem;
+    border-radius: 1.7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+ .sortBy .sortByBox ul li a.active{
+   background-color: #002970;
+   color: #fff;
+ }
+ .sortBy .sortByBox h2{
+   font-weight: 600;
+   font-size: 1rem;
+   margin-right: .5rem;
+   color: #000;
+  }
+  .sortBy .sortByBox .form-control{
+    box-shadow: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: .9rem;
+    border: none;
+   }
+   .sortBy .sortByBox .form-control::placeholder{
+    font-weight: 500;
+    font-size: .8rem;
+   }
+   .sortBy .inputBox{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 0 0 .4rem;
+   }
+   .listingHotel{
+    margin-top: 1.5rem;
+   }
+   .listingHotel .filterBox{
+    border-radius: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+   }
+   .listingHotel .filterBox .filterHeader{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #ccc;
+   padding-bottom: 1rem;
+   }
+   .listingHotel .filterBox .filterHeader h3{
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    }
+    .listingHotel .filterBox .filterHeader a{
+        font-weight: 500;
+        cursor: pointer;
+        color: rgb(119, 119, 119);
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .listingHotel .filterBox .filterItem{
+       padding-top: 1rem;
+    }
+    .listingHotel .filterBox .filterItem h4{
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(20, 24, 35);
+        margin-bottom: 1rem;
+    }
+    .listingHotel .filterBox .filterItem .checkSet{
+       display: flex;
+       align-items: center;
+       margin-bottom: 1rem;
+    }
+    .listingHotel .filterBox .filterItem .checkSet .checkBox{
+        border: 2px solid #a6adb3;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 1rem;
+        border-radius: 0;
+        cursor: pointer;
+     }
+     .listingHotel .filterBox .filterItem .checkSet .label{
+       font-weight: 500;
+       color: #000;
+       font-size: .78rem;
+     }
+     .listingHotel .filterBox .filterItem .checkSet .label img{
+       object-fit: contain;
+       height: 1rem;
+      }
+      .listingHotel .filterBox .filterItem .checkSet .label .ratingBadge{
+        width: 2rem;
+        height: 1.4rem;
+        background-color: var(--primary-color);
+        color: #fff;
+        font-weight: 600;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        letter-spacing: .5px;
+       }
+       .hotelItem .hotelImg{
+       margin-bottom: .2rem;
+       }
+       .hotelItem .hotelImg img{
+        max-width: 100%;
+        border-radius: 4px;
+       }
+       .listHotels .hotelItem{
+        background-color: rgb(255, 255, 255);
+        border: 0.2rem solid transparent;
+        border-radius: 1.2rem;
+        padding: .5rem;
+        margin-bottom: 1rem;
+       }
+       .listHotels .hotelItem:hover{
+        border: 0.2rem solid var(--primary-color);
+       }
+       .hotelItem .moreImg{
+        display: flex;
+        gap: 4px;
+       }
+       .hotelItem .moreImg img{
+        object-fit: contain;
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 10px;
+       }
+       .hotelItem .moreImg span{
+        font-weight: 500;
+        font-size: .7rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: .2rem;
+        letter-spacing: .5px;
+        color: #000;
+       }
+       .hotelItem .stayType{
+       display: flex;
+       gap: 10px;
+       margin-bottom: .5rem;
+       }
+       .hotelItem .stayType img{
+        object-fit: contain;
+        height: 1rem;
+      }
+      .hotelItem .stayType small{
+        line-height: normal;
+        font-size: 10px;
+        font-weight: 600;
+        color: rgb(70, 72, 77);
+        padding: 0.2rem;
+        border: 0.1rem solid rgb(239, 243, 248);
+        text-transform: uppercase;
+        border-radius: 0.2rem;
+        margin: 0px 0.5rem;
+      }
+      .hotelItem .stayType .rateBox{
+        display: flex;
+        align-items: flex-start;
+      }
+      .hotelItem .stayType .rateBox .badge{
+        margin-right: 0.5rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.2rem;
+        background-color: rgb(72, 180, 28);
+        display: flex;
+        align-items: center;
+        max-width: 6.5rem;
+    }
+    .hotelItem .stayType .rateBox .txt{
+        line-height: normal;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgb(119, 119, 119);
+        padding-right: 0.5rem;
+        display: inline-flex;
+    }
+    .hotelItem .htlName{
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: .5rem;
+    }
+    .hotelItem .locationBox{
+       margin-bottom: .5rem;
+    }
+    .hotelItem .locationBox span{
+        line-height: normal;
+        font-size: 12px;
+        font-weight: 500;
+        margin: .4rem 0 ;
+        color: rgb(25, 88, 182);
+        background-color: rgb(255, 255, 255);
+        text-transform: capitalize;
+        display: block;
+     }
+     .hotelItem .locationBox span svg{
+       margin-right: .2rem;
+     }
+     .hotelItem .aminityBox {
+        display: flex;
+        max-width: 300px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+  
+     .hotelItem .aminityBox .item svg{
+      height: 16px;
+      width: 16px;
+      fill: #a2a2a2;
+      }
+     .hotelItem .aminityBox .item span{
+        font-size: 12px;
+        font-weight: 500;
+        padding-left: 0.2rem;
+        color: rgb(70, 72, 77);
+      }
+      .hotelItem .aminityBox .item small{
+        background-color: #e8eaed;
+        border-radius: 2px;
+        margin-left: 2px;
+        padding: 2px 4px;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #202124;
+        letter-spacing: .2px;
+    }
+    .hotelItem .priceBox {
+       display: flex;
+       justify-content: right;
+       flex-direction: column;
+       align-items: flex-end;
+    }
+    .hotelItem .priceBox .discountBox{
+        font-size: 12px;
+        font-weight: 600;
+        display: inline-flex;
+        background-color: rgb(230, 49, 72);
+        border-radius: 0.5rem 0.4rem 0.4rem 0.5rem;
+        color: rgb(255, 255, 255);
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+    }
+    .hotelItem .priceBox .discountBox{
+        font-size: 12px;
+        font-weight: 600;
+        display: inline-flex;
+        background-color: rgb(230, 49, 72);
+        border-radius: 0.5rem 0.4rem 0.4rem 0.5rem;
+        color: rgb(255, 255, 255);
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+    }
+    .hotelItem .priceBox  .value{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: .5rem;
+
+    }
+    .hotelItem .priceBox  .value h2{
+        font-size: 22px;
+        font-weight: 600;
+        color: #000;
+    }
+    .hotelItem .priceBox  .value span{
+       text-decoration: line-through;
+       color: rgb(119, 119, 119);
+       font-size: .8rem;
+    }
+    .hotelItem .priceBox  .tax{
+        font-size: 12px;
+        font-weight: 500;
+        padding: 0.5rem 0px 0px;
+        text-transform: uppercase;
+        color: rgb(20, 24, 35);
+        margin-bottom: .5rem;
+     }
+     .hotelItem .priceBox  .perNight{
+        font-weight: 500;
+       color: rgb(119, 119, 119);
+       font-size: .8rem;
+     }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/montserrat.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/hotel-search.css">
 </head>
 <body>
      <header class="pageHeader">
@@ -116,36 +116,25 @@
             </div>
         </div>
      </header>
-     <section class="datepickerSection">
+     <section class="stickySearch">
         <div class="container">
-            <h1>Over 3143+ hotels  in 399+  cities across India</h1>
-            <div class="datepickerBox">
-                <div class="pickerInputs">
-                    <div class="cityName">
-                       <div class="plceholdBox">
-                            <small class="customPlaceholder">Destination</small>
-                            <input type="text" placeholder="Serach by city or hotel"/>
-                       </div>
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0c17.7 0 32 14.3 32 32l0 34.7C368.4 80.1 431.9 143.6 445.3 224l34.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-34.7 0C431.9 368.4 368.4 431.9 288 445.3l0 34.7c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-34.7C143.6 431.9 80.1 368.4 66.7 288L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l34.7 0C80.1 143.6 143.6 80.1 224 66.7L224 32c0-17.7 14.3-32 32-32zM128 256a128 128 0 1 0 256 0 128 128 0 1 0 -256 0zm128-80a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg>
-                            Aroud Me
-                        </button>
-                    </div>
-                    <div class="checkinInput">
-                        <div class="plceholdBox">
-                            <small class="customPlaceholder">Check In</small>
-                            <input type="text" id="checkin" placeholder="Check-in Date" autocomplete="off">
-                        </div>
-                        <div class="plceholdBox">
-                            <small class="customPlaceholder">Check Out</small>
-                            <input type="text" id="checkout" placeholder="Check-out Date" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="guestInput">
-                        <div class="plceholdBox">
-                            <small class="customPlaceholder">Guests &amp; Rooms</small>
-                            <button class="dispalyinputfigure">1 Room, 2 Guests</button>
-                        </div>    
+            <div class="stichySearchBox">
+                <div class="inputBox">
+                    <span>Location, Area, Landmark, Property Name</span>
+                    <input type="text" class="form-control location" placeholder="Varanasi, Uttar Pradesh">
+                </div>
+                <div class="inputBox">
+                    <span>Check In</span>
+                    <input type="text" id="checkin" placeholder="Check-in Date" autocomplete="off" class="form-control">
+                </div>
+                <div class="inputBox">
+                    <span>Check Out</span>
+                    <input type="text" id="checkout" placeholder="Check-out Date" autocomplete="off" class="form-control">
+                </div>
+                <div class="inputBox guestInputBox">
+                    <span>GUEST & ROOMS</span>
+                    <button class="dispalyinputfigure form-control">2 Adults 1 Room</button>
+                   <div class="guestInput">
                         <div class="inputfigure">
                             <div class="figurebox">
                                 <h5>
@@ -181,51 +170,524 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    <div class="searchBtn">
-                        <button>search</button>
-                    </div>     
+                   </div>
+                </div>
+                <div class="searchBtn inputBox">
+                    <button class="form-control">modify search</button>
                 </div>
             </div>
         </div>
-        <div class="container explByCity">
-            <h2>Explore by Cities</h2>
+     </section>
+     <section class="sortBy">
+        <div class="container">
+            <div class="sortByBox">
+                <div class="d-flex align-items-center">
+                    <h2>Sort By:</h2>
+                    <ul>
+                        <li><a href="#" class="active">Nearest</a></li>
+                        <li><a href="#">Popularity</a></li>
+                        <li><a href="#">Price(Low to High)</a></li>
+                        <li><a href="#">Price(High to Low)</a></li>
+                        <li><a href="#">Ratings</a></li>
+                    </ul>
+                </div>
+                <div class="inputBox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#777777" width="16px" height="16px" class="HappySearchIcon-sc-9cg8c3-0 fXDtaz"><path d="m15.61 13.731-3.095-3.096a6.84 6.84 0 0 0-1.348-9.084 6.83 6.83 0 0 0-9.166.452 6.84 6.84 0 0 0-.449 9.172 6.83 6.83 0 0 0 9.079 1.346l3.095 3.095c.524.512 1.36.512 1.884 0 .52-.52.52-1.364 0-1.885M6.84 2.008a4.83 4.83 0 0 1 4.83 4.833 4.831 4.831 0 1 1-9.661 0 4.837 4.837 0 0 1 4.83-4.833z"></path></svg>
+                    <input type="search" class="form-control" placeholder="Search location or hotel name">
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="listingHotel">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="cityBox">
-                        <img src="./images/delhi.jpg" alt="delhi">
-                        <div>
-                            <p>Delhi</p>
-                            <span>345 Hotels</span>
+                <aside class="col-lg-3">
+                    <div class="filterBox">
+                        <div class="filterHeader">
+                            <h3>FILTERS</h3>
+                            <a href="#">Clear</a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="cityBox">
-                        <img src="./images/mumbai.jpg" alt="mumbai">
-                        <div>
-                            <p>Mumbai</p>
-                            <span>345 Hotels</span>
+                        <div class="filterItem">
+                            <h4>Popular Filters</h4>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Couple-friendly Stays
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Top Rated Affordable Properties
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Free Cancellation Available
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Free Breakfast Included
+                                </label>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="cityBox">
-                        <img src="./images/kolkata.png" alt="kolkata">
-                        <div>
-                            <p>Kolkata</p>
-                            <span>345 Hotels</span>
+                        <div class="filterItem">
+                            <h4>Price Range</h4>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Upto ₹2000
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    ₹2001 - ₹4000
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    ₹4001 - ₹6000
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    ₹6000 +
+                                </label>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <a href="#" class="cityBox">
-                        <img src="./images/chennai.jpg" alt="chennai">
-                        <div>
-                            <p>Chennai</p>
-                            <span>345 Hotels</span>
+                        <div class="filterItem">
+                            <h4>Price Range</h4>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Upto ₹2000
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    ₹2001 - ₹4000
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    ₹4001 - ₹6000
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    ₹6000 +
+                                </label>
+                            </div>
+                        </div> 
+                        <div class="filterItem">
+                            <h4>Customer Ratings</h4>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                   <span class="ratingBadge">4.5+</span>
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                   <span class="ratingBadge">4+</span>
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                   <span class="ratingBadge">3.5+</span>
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                   <span class="ratingBadge">3+</span>
+                                </label>
+                            </div>
+                        </div> 
+                        <div class="filterItem">
+                            <h4>Star Ratings</h4>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                   <img src="./images/5-star.png" alt="5-star">
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    <img src="./images/3-star.png" alt="4-star">
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    <img src="./images/3-star.png" alt="3-star">
+                                </label>
+                            </div>
+                        </div> 
+                        <div class="filterItem">
+                            <h4>Food & Dining</h4>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Breakfast Included
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Restaurant Available
+                                </label>
+                            </div>
                         </div>
-                    </a>
+                        <div class="filterItem">
+                            <h4>Amenities</h4>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Airport Transfers
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                    Balcony/Terrace
+                                </label>
+                            </div>
+                            <div class="checkSet">
+                                <input class="checkBox" type="checkbox" value="" >
+                                <label class="label" for="flexCheckDefault">
+                                   Bar
+                                </label>
+                            </div>
+                        </div>  
+                    </div>
+                </aside>
+                <div class="col-lg-9">
+                    <div class="listHotels">
+                        <a href="#" class="hotelItem row">
+                            <div class="col-lg-4 p-0">
+                                <div class="hotelImg">
+                                    <img src="./images/hotel-img.avif" alt="hotel">
+                                </div>
+                                <div class="moreImg">
+                                    <img src="./images/img-1.avif" alt="hotel-img">
+                                    <img src="./images/img-2.jpg" alt="hotel-img">
+                                    <img src="./images/img-3.avif" alt="hotel-img">
+                                    <img src="./images/img-6.jpg" alt="hotel-img">
+                                    <span>View All</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="stayType">
+                                    <img src="./images/5-star.png" alt="5-star">
+                                    <small>Hotel</small>
+                                    <div class="rateBox">
+                                        <span class="badge">4.8/5</span> 
+                                        <span class="txt">181 Verified Ratings</span>                                       
+                                    </div>
+                                </div>
+                                <div class="htlName">
+                                    Hotel Runway Inn
+                                </div>
+                                <div class="locationBox">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                        </svg>
+                                        Babatpur
+                                    </span>
+                                    <span>
+                                        2.1 km drive to Kashi Vishwanath Temple
+                                    </span>
+                                </div>
+                                <div class="aminityBox">
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2a2 2 0 0 0 2-2V5c0-1.11-.89-2-2-2zm-4 10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5h10v8zm4-5h-2V5h2v3z"></path></svg>
+                                        <span>Breakfast</span>
+                                        <small>free</small>
+                                    </div>
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 0 0-6 0zm-4-4l2 2a7.074 7.074 0 0 1 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"></path></svg>
+                                        <span>Wifi</span>
+                                        <small>free</small>
+                                    </div>
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22v-2z"></path></svg>
+                                        <span>Air conditioning</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="RestaurantIcon-sc-1f8rkpo-0 GdODI"><path d="M20.667 0a1 1 0 0 0-1 1v29.667a1.333 1.333 0 0 0 2.666 0V20c0-.368.298-.667.667-.667h2.333A1.66 1.66 0 0 0 27 17.685v-.027999999999999997C26.915 8.073 23.776 0 20.667 0M14.333 0C13.597 0 13 .597 13 1.333V8a2.66 2.66 0 0 1-.761 1.867.334.334 0 0 1-.572-.234v-8.3a1.333 1.333 0 0 0-2.666 0V9.63a.334.334 0 0 1-.572.233 2.66 2.66 0 0 1-.761-1.864V1.332a1.333 1.333 0 0 0-2.666 0v6.667a5.34 5.34 0 0 0 3.556 5.029.67.67 0 0 1 .444.628v17.009a1.333 1.333 0 0 0 2.666 0V13.656c0-.282.178-.534.444-.628a5.345 5.345 0 0 0 3.556-5.029V1.332c0-.736-.597-1.333-1.333-1.333z"></path></svg>
+                                        <span>Restaurant</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="SwimmingIcon-sc-2o20qz-0 fMCHvN"><path d="M9.431 18.767a2.81 2.81 0 0 0 1.983 1.165 3.72 3.72 0 0 0 2.517-1.356 3.333 3.333 0 0 1 5.716.52c.295.499.823.813 1.401.836a2.49 2.49 0 0 0 1.969-1.128c.198-.34.46-.639.772-.879a.333.333 0 0 0 .065-.456l-6.145-8.605a2 2 0 0 1 1.142-3.103l5.232-1.309a2 2 0 0 0-.971-3.88L17.879 1.88a6 6 0 0 0-3.425 9.31l.393.551-7.333 5.04a.333.333 0 0 0 .091.593 3.27 3.27 0 0 1 1.825 1.393z"></path><path d="M26.906 8.006a3.166 3.166 0 1 1-4.478 4.478 3.166 3.166 0 1 1 4.478-4.478M11.413 24.597a7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.37 6.37 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.419 1.363 1.363 0 0 0-1.424-1.239 4.48 4.48 0 0 1-3.567-2.092 1.4 1.4 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.74 3.74 0 0 1-3.2-1.975 1.39 1.39 0 0 0-2.29-.209 5.74 5.74 0 0 1-4.133 2.184 4.74 4.74 0 0 1-3.68-2.107 1.39 1.39 0 0 0-2.184-.122c-.017.024-1.956 2.427-4.145 2.267a1.307 1.307 0 0 0-1.414 1.192l-.004.073a1.33 1.33 0 0 0 1.261 1.401c.101 0 .199.008.296.008a7.78 7.78 0 0 0 4.976-2.143 6.98 6.98 0 0 0 4.88 2.096zM30.573 28.759a4.51 4.51 0 0 1-3.567-2.092 1.398 1.398 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.73 3.73 0 0 1-3.2-1.976 1.393 1.393 0 0 0-2.29-.208 5.74 5.74 0 0 1-4.133 2.184 4.75 4.75 0 0 1-3.692-2.107 1.388 1.388 0 0 0-2.184-.122c-.017.024-1.853 2.275-3.989 2.275h-.156a1.304 1.304 0 0 0-1.401 1.199l-.003.057a1.335 1.335 0 0 0 1.26 1.403h.001c.101 0 .199.008.296.008a7.8 7.8 0 0 0 4.976-2.143 6.99 6.99 0 0 0 4.88 2.096 7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.43 6.43 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.416 1.353 1.353 0 0 0-1.427-1.241z"></path></svg>
+                                        <span>Swimming Pool</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg viewBox="0 0 24 24"><path d="M17 5H3a2 2 0 0 0-2 2v9h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-6-6zm-2 2h1l3 3h-4V7zM9 7h4v3H9V7zM3 7h4v3H3V7zm3 10.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm12 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zM21 14h-.78c-.55-.61-1.34-1-2.22-1s-1.67.39-2.22 1H8.22c-.55-.61-1.33-1-2.22-1s-1.67.39-2.22 1H3v-2h18v2z"></path></svg>
+                                        <span>Airport shuttle</span>
+                                    </div>
+                                </div>
+                                <div class="priceBox">
+                                    <div class="discountBox">
+                                        30% OFF
+                                    </div>
+                                    <div class="value">
+                                        <span>₹11,000</span>
+                                        <h2>₹9,000</h2>
+                                    </div>
+                                    <p class="tax">+ ₹1,317 taxes & fees</p>
+                                    <span class="perNight">Per Night</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--  -->
+                        <a href="#" class="hotelItem row">
+                            <div class="col-lg-4 p-0">
+                                <div class="hotelImg">
+                                    <img src="./images/hotel-img.avif" alt="hotel">
+                                </div>
+                                <div class="moreImg">
+                                    <img src="./images/img-1.avif" alt="hotel-img">
+                                    <img src="./images/img-2.jpg" alt="hotel-img">
+                                    <img src="./images/img-3.avif" alt="hotel-img">
+                                    <img src="./images/img-6.jpg" alt="hotel-img">
+                                    <span>View All</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="stayType">
+                                    <img src="./images/5-star.png" alt="5-star">
+                                    <small>Hotel</small>
+                                    <div class="rateBox">
+                                        <span class="badge">4.8/5</span> 
+                                        <span class="txt">181 Verified Ratings</span>                                       
+                                    </div>
+                                </div>
+                                <div class="htlName">
+                                    Hotel Runway Inn
+                                </div>
+                                <div class="locationBox">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                        </svg>
+                                        Babatpur
+                                    </span>
+                                    <span>
+                                        2.1 km drive to Kashi Vishwanath Temple
+                                    </span>
+                                </div>
+                                <div class="aminityBox">
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2a2 2 0 0 0 2-2V5c0-1.11-.89-2-2-2zm-4 10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5h10v8zm4-5h-2V5h2v3z"></path></svg>
+                                        <span>Breakfast</span>
+                                        <small>free</small>
+                                    </div>
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 0 0-6 0zm-4-4l2 2a7.074 7.074 0 0 1 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"></path></svg>
+                                        <span>Wifi</span>
+                                        <small>free</small>
+                                    </div>
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22v-2z"></path></svg>
+                                        <span>Air conditioning</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="RestaurantIcon-sc-1f8rkpo-0 GdODI"><path d="M20.667 0a1 1 0 0 0-1 1v29.667a1.333 1.333 0 0 0 2.666 0V20c0-.368.298-.667.667-.667h2.333A1.66 1.66 0 0 0 27 17.685v-.027999999999999997C26.915 8.073 23.776 0 20.667 0M14.333 0C13.597 0 13 .597 13 1.333V8a2.66 2.66 0 0 1-.761 1.867.334.334 0 0 1-.572-.234v-8.3a1.333 1.333 0 0 0-2.666 0V9.63a.334.334 0 0 1-.572.233 2.66 2.66 0 0 1-.761-1.864V1.332a1.333 1.333 0 0 0-2.666 0v6.667a5.34 5.34 0 0 0 3.556 5.029.67.67 0 0 1 .444.628v17.009a1.333 1.333 0 0 0 2.666 0V13.656c0-.282.178-.534.444-.628a5.345 5.345 0 0 0 3.556-5.029V1.332c0-.736-.597-1.333-1.333-1.333z"></path></svg>
+                                        <span>Restaurant</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="SwimmingIcon-sc-2o20qz-0 fMCHvN"><path d="M9.431 18.767a2.81 2.81 0 0 0 1.983 1.165 3.72 3.72 0 0 0 2.517-1.356 3.333 3.333 0 0 1 5.716.52c.295.499.823.813 1.401.836a2.49 2.49 0 0 0 1.969-1.128c.198-.34.46-.639.772-.879a.333.333 0 0 0 .065-.456l-6.145-8.605a2 2 0 0 1 1.142-3.103l5.232-1.309a2 2 0 0 0-.971-3.88L17.879 1.88a6 6 0 0 0-3.425 9.31l.393.551-7.333 5.04a.333.333 0 0 0 .091.593 3.27 3.27 0 0 1 1.825 1.393z"></path><path d="M26.906 8.006a3.166 3.166 0 1 1-4.478 4.478 3.166 3.166 0 1 1 4.478-4.478M11.413 24.597a7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.37 6.37 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.419 1.363 1.363 0 0 0-1.424-1.239 4.48 4.48 0 0 1-3.567-2.092 1.4 1.4 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.74 3.74 0 0 1-3.2-1.975 1.39 1.39 0 0 0-2.29-.209 5.74 5.74 0 0 1-4.133 2.184 4.74 4.74 0 0 1-3.68-2.107 1.39 1.39 0 0 0-2.184-.122c-.017.024-1.956 2.427-4.145 2.267a1.307 1.307 0 0 0-1.414 1.192l-.004.073a1.33 1.33 0 0 0 1.261 1.401c.101 0 .199.008.296.008a7.78 7.78 0 0 0 4.976-2.143 6.98 6.98 0 0 0 4.88 2.096zM30.573 28.759a4.51 4.51 0 0 1-3.567-2.092 1.398 1.398 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.73 3.73 0 0 1-3.2-1.976 1.393 1.393 0 0 0-2.29-.208 5.74 5.74 0 0 1-4.133 2.184 4.75 4.75 0 0 1-3.692-2.107 1.388 1.388 0 0 0-2.184-.122c-.017.024-1.853 2.275-3.989 2.275h-.156a1.304 1.304 0 0 0-1.401 1.199l-.003.057a1.335 1.335 0 0 0 1.26 1.403h.001c.101 0 .199.008.296.008a7.8 7.8 0 0 0 4.976-2.143 6.99 6.99 0 0 0 4.88 2.096 7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.43 6.43 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.416 1.353 1.353 0 0 0-1.427-1.241z"></path></svg>
+                                        <span>Swimming Pool</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg viewBox="0 0 24 24"><path d="M17 5H3a2 2 0 0 0-2 2v9h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-6-6zm-2 2h1l3 3h-4V7zM9 7h4v3H9V7zM3 7h4v3H3V7zm3 10.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm12 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zM21 14h-.78c-.55-.61-1.34-1-2.22-1s-1.67.39-2.22 1H8.22c-.55-.61-1.33-1-2.22-1s-1.67.39-2.22 1H3v-2h18v2z"></path></svg>
+                                        <span>Airport shuttle</span>
+                                    </div>
+                                </div>
+                                <div class="priceBox">
+                                    <div class="discountBox">
+                                        30% OFF
+                                    </div>
+                                    <div class="value">
+                                        <span>₹11,000</span>
+                                        <h2>₹9,000</h2>
+                                    </div>
+                                    <p class="tax">+ ₹1,317 taxes & fees</p>
+                                    <span class="perNight">Per Night</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--  -->
+                        <a href="#" class="hotelItem row">
+                            <div class="col-lg-4 p-0">
+                                <div class="hotelImg">
+                                    <img src="./images/hotel-img.avif" alt="hotel">
+                                </div>
+                                <div class="moreImg">
+                                    <img src="./images/img-1.avif" alt="hotel-img">
+                                    <img src="./images/img-2.jpg" alt="hotel-img">
+                                    <img src="./images/img-3.avif" alt="hotel-img">
+                                    <img src="./images/img-6.jpg" alt="hotel-img">
+                                    <span>View All</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="stayType">
+                                    <img src="./images/5-star.png" alt="5-star">
+                                    <small>Hotel</small>
+                                    <div class="rateBox">
+                                        <span class="badge">4.8/5</span> 
+                                        <span class="txt">181 Verified Ratings</span>                                       
+                                    </div>
+                                </div>
+                                <div class="htlName">
+                                    Hotel Runway Inn
+                                </div>
+                                <div class="locationBox">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                        </svg>
+                                        Babatpur
+                                    </span>
+                                    <span>
+                                        2.1 km drive to Kashi Vishwanath Temple
+                                    </span>
+                                </div>
+                                <div class="aminityBox">
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2a2 2 0 0 0 2-2V5c0-1.11-.89-2-2-2zm-4 10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5h10v8zm4-5h-2V5h2v3z"></path></svg>
+                                        <span>Breakfast</span>
+                                        <small>free</small>
+                                    </div>
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 0 0-6 0zm-4-4l2 2a7.074 7.074 0 0 1 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"></path></svg>
+                                        <span>Wifi</span>
+                                        <small>free</small>
+                                    </div>
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22v-2z"></path></svg>
+                                        <span>Air conditioning</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="RestaurantIcon-sc-1f8rkpo-0 GdODI"><path d="M20.667 0a1 1 0 0 0-1 1v29.667a1.333 1.333 0 0 0 2.666 0V20c0-.368.298-.667.667-.667h2.333A1.66 1.66 0 0 0 27 17.685v-.027999999999999997C26.915 8.073 23.776 0 20.667 0M14.333 0C13.597 0 13 .597 13 1.333V8a2.66 2.66 0 0 1-.761 1.867.334.334 0 0 1-.572-.234v-8.3a1.333 1.333 0 0 0-2.666 0V9.63a.334.334 0 0 1-.572.233 2.66 2.66 0 0 1-.761-1.864V1.332a1.333 1.333 0 0 0-2.666 0v6.667a5.34 5.34 0 0 0 3.556 5.029.67.67 0 0 1 .444.628v17.009a1.333 1.333 0 0 0 2.666 0V13.656c0-.282.178-.534.444-.628a5.345 5.345 0 0 0 3.556-5.029V1.332c0-.736-.597-1.333-1.333-1.333z"></path></svg>
+                                        <span>Restaurant</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="SwimmingIcon-sc-2o20qz-0 fMCHvN"><path d="M9.431 18.767a2.81 2.81 0 0 0 1.983 1.165 3.72 3.72 0 0 0 2.517-1.356 3.333 3.333 0 0 1 5.716.52c.295.499.823.813 1.401.836a2.49 2.49 0 0 0 1.969-1.128c.198-.34.46-.639.772-.879a.333.333 0 0 0 .065-.456l-6.145-8.605a2 2 0 0 1 1.142-3.103l5.232-1.309a2 2 0 0 0-.971-3.88L17.879 1.88a6 6 0 0 0-3.425 9.31l.393.551-7.333 5.04a.333.333 0 0 0 .091.593 3.27 3.27 0 0 1 1.825 1.393z"></path><path d="M26.906 8.006a3.166 3.166 0 1 1-4.478 4.478 3.166 3.166 0 1 1 4.478-4.478M11.413 24.597a7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.37 6.37 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.419 1.363 1.363 0 0 0-1.424-1.239 4.48 4.48 0 0 1-3.567-2.092 1.4 1.4 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.74 3.74 0 0 1-3.2-1.975 1.39 1.39 0 0 0-2.29-.209 5.74 5.74 0 0 1-4.133 2.184 4.74 4.74 0 0 1-3.68-2.107 1.39 1.39 0 0 0-2.184-.122c-.017.024-1.956 2.427-4.145 2.267a1.307 1.307 0 0 0-1.414 1.192l-.004.073a1.33 1.33 0 0 0 1.261 1.401c.101 0 .199.008.296.008a7.78 7.78 0 0 0 4.976-2.143 6.98 6.98 0 0 0 4.88 2.096zM30.573 28.759a4.51 4.51 0 0 1-3.567-2.092 1.398 1.398 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.73 3.73 0 0 1-3.2-1.976 1.393 1.393 0 0 0-2.29-.208 5.74 5.74 0 0 1-4.133 2.184 4.75 4.75 0 0 1-3.692-2.107 1.388 1.388 0 0 0-2.184-.122c-.017.024-1.853 2.275-3.989 2.275h-.156a1.304 1.304 0 0 0-1.401 1.199l-.003.057a1.335 1.335 0 0 0 1.26 1.403h.001c.101 0 .199.008.296.008a7.8 7.8 0 0 0 4.976-2.143 6.99 6.99 0 0 0 4.88 2.096 7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.43 6.43 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.416 1.353 1.353 0 0 0-1.427-1.241z"></path></svg>
+                                        <span>Swimming Pool</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg viewBox="0 0 24 24"><path d="M17 5H3a2 2 0 0 0-2 2v9h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-6-6zm-2 2h1l3 3h-4V7zM9 7h4v3H9V7zM3 7h4v3H3V7zm3 10.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm12 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zM21 14h-.78c-.55-.61-1.34-1-2.22-1s-1.67.39-2.22 1H8.22c-.55-.61-1.33-1-2.22-1s-1.67.39-2.22 1H3v-2h18v2z"></path></svg>
+                                        <span>Airport shuttle</span>
+                                    </div>
+                                </div>
+                                <div class="priceBox">
+                                    <div class="discountBox">
+                                        30% OFF
+                                    </div>
+                                    <div class="value">
+                                        <span>₹11,000</span>
+                                        <h2>₹9,000</h2>
+                                    </div>
+                                    <p class="tax">+ ₹1,317 taxes & fees</p>
+                                    <span class="perNight">Per Night</span>
+                                </div>
+                            </div>
+                        </a>
+                        <!--  -->
+                        <a href="#" class="hotelItem row">
+                            <div class="col-lg-4 p-0">
+                                <div class="hotelImg">
+                                    <img src="./images/hotel-img.avif" alt="hotel">
+                                </div>
+                                <div class="moreImg">
+                                    <img src="./images/img-1.avif" alt="hotel-img">
+                                    <img src="./images/img-2.jpg" alt="hotel-img">
+                                    <img src="./images/img-3.avif" alt="hotel-img">
+                                    <img src="./images/img-6.jpg" alt="hotel-img">
+                                    <span>View All</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="stayType">
+                                    <img src="./images/5-star.png" alt="5-star">
+                                    <small>Hotel</small>
+                                    <div class="rateBox">
+                                        <span class="badge">4.8/5</span> 
+                                        <span class="txt">181 Verified Ratings</span>                                       
+                                    </div>
+                                </div>
+                                <div class="htlName">
+                                    Hotel Runway Inn
+                                </div>
+                                <div class="locationBox">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                                        </svg>
+                                        Babatpur
+                                    </span>
+                                    <span>
+                                        2.1 km drive to Kashi Vishwanath Temple
+                                    </span>
+                                </div>
+                                <div class="aminityBox">
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2a2 2 0 0 0 2-2V5c0-1.11-.89-2-2-2zm-4 10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5h10v8zm4-5h-2V5h2v3z"></path></svg>
+                                        <span>Breakfast</span>
+                                        <small>free</small>
+                                    </div>
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 0 0-6 0zm-4-4l2 2a7.074 7.074 0 0 1 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"></path></svg>
+                                        <span>Wifi</span>
+                                        <small>free</small>
+                                    </div>
+                                    <div class="item">
+                                        <svg  viewBox="0 0 24 24"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22v-2z"></path></svg>
+                                        <span>Air conditioning</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="RestaurantIcon-sc-1f8rkpo-0 GdODI"><path d="M20.667 0a1 1 0 0 0-1 1v29.667a1.333 1.333 0 0 0 2.666 0V20c0-.368.298-.667.667-.667h2.333A1.66 1.66 0 0 0 27 17.685v-.027999999999999997C26.915 8.073 23.776 0 20.667 0M14.333 0C13.597 0 13 .597 13 1.333V8a2.66 2.66 0 0 1-.761 1.867.334.334 0 0 1-.572-.234v-8.3a1.333 1.333 0 0 0-2.666 0V9.63a.334.334 0 0 1-.572.233 2.66 2.66 0 0 1-.761-1.864V1.332a1.333 1.333 0 0 0-2.666 0v6.667a5.34 5.34 0 0 0 3.556 5.029.67.67 0 0 1 .444.628v17.009a1.333 1.333 0 0 0 2.666 0V13.656c0-.282.178-.534.444-.628a5.345 5.345 0 0 0 3.556-5.029V1.332c0-.736-.597-1.333-1.333-1.333z"></path></svg>
+                                        <span>Restaurant</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="SwimmingIcon-sc-2o20qz-0 fMCHvN"><path d="M9.431 18.767a2.81 2.81 0 0 0 1.983 1.165 3.72 3.72 0 0 0 2.517-1.356 3.333 3.333 0 0 1 5.716.52c.295.499.823.813 1.401.836a2.49 2.49 0 0 0 1.969-1.128c.198-.34.46-.639.772-.879a.333.333 0 0 0 .065-.456l-6.145-8.605a2 2 0 0 1 1.142-3.103l5.232-1.309a2 2 0 0 0-.971-3.88L17.879 1.88a6 6 0 0 0-3.425 9.31l.393.551-7.333 5.04a.333.333 0 0 0 .091.593 3.27 3.27 0 0 1 1.825 1.393z"></path><path d="M26.906 8.006a3.166 3.166 0 1 1-4.478 4.478 3.166 3.166 0 1 1 4.478-4.478M11.413 24.597a7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.37 6.37 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.419 1.363 1.363 0 0 0-1.424-1.239 4.48 4.48 0 0 1-3.567-2.092 1.4 1.4 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.74 3.74 0 0 1-3.2-1.975 1.39 1.39 0 0 0-2.29-.209 5.74 5.74 0 0 1-4.133 2.184 4.74 4.74 0 0 1-3.68-2.107 1.39 1.39 0 0 0-2.184-.122c-.017.024-1.956 2.427-4.145 2.267a1.307 1.307 0 0 0-1.414 1.192l-.004.073a1.33 1.33 0 0 0 1.261 1.401c.101 0 .199.008.296.008a7.78 7.78 0 0 0 4.976-2.143 6.98 6.98 0 0 0 4.88 2.096zM30.573 28.759a4.51 4.51 0 0 1-3.567-2.092 1.398 1.398 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.73 3.73 0 0 1-3.2-1.976 1.393 1.393 0 0 0-2.29-.208 5.74 5.74 0 0 1-4.133 2.184 4.75 4.75 0 0 1-3.692-2.107 1.388 1.388 0 0 0-2.184-.122c-.017.024-1.853 2.275-3.989 2.275h-.156a1.304 1.304 0 0 0-1.401 1.199l-.003.057a1.335 1.335 0 0 0 1.26 1.403h.001c.101 0 .199.008.296.008a7.8 7.8 0 0 0 4.976-2.143 6.99 6.99 0 0 0 4.88 2.096 7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.43 6.43 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.416 1.353 1.353 0 0 0-1.427-1.241z"></path></svg>
+                                        <span>Swimming Pool</span>
+                                    </div>
+                                    <div class="item">
+                                        <svg viewBox="0 0 24 24"><path d="M17 5H3a2 2 0 0 0-2 2v9h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-6-6zm-2 2h1l3 3h-4V7zM9 7h4v3H9V7zM3 7h4v3H3V7zm3 10.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm12 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zM21 14h-.78c-.55-.61-1.34-1-2.22-1s-1.67.39-2.22 1H8.22c-.55-.61-1.33-1-2.22-1s-1.67.39-2.22 1H3v-2h18v2z"></path></svg>
+                                        <span>Airport shuttle</span>
+                                    </div>
+                                </div>
+                                <div class="priceBox">
+                                    <div class="discountBox">
+                                        30% OFF
+                                    </div>
+                                    <div class="value">
+                                        <span>₹11,000</span>
+                                        <h2>₹9,000</h2>
+                                    </div>
+                                    <p class="tax">+ ₹1,317 taxes & fees</p>
+                                    <span class="perNight">Per Night</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
