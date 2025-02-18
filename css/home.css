@@ -26,7 +26,7 @@
     min-height: 100vh;
 }
 .datepickerSection .datepickerBox{
-    padding: 20px 0 16px 20px;
+    padding: 20px 10px;
     background-color: #fff;
     border: 1px solid #d3d3d3;
     border-radius: 12px;
@@ -37,14 +37,15 @@
 }
 .datepickerSection .datepickerBox .pickerInputs{
    display: flex;
-   gap: 20px;
+   gap: 6px;
    min-height: 50px;
 }
 .datepickerSection .datepickerBox .pickerInputs .cityName{
     display: flex;
     align-items: center;
-    border-right: 1px solid #cacaca;
-    padding-right: .5rem;
+    border: 1px solid #dfdfdf;
+    padding: .6rem;
+    border-radius: 8px;
  }
 
  .datepickerSection .pickerInputs input{
@@ -53,23 +54,49 @@
     color: #000;
     font-weight: 600;
     letter-spacing: .5px;
+    font-size: .9rem;
  }
  .datepickerSection .pickerInputs input::placeholder{
     color: #000;
     font-weight: 600;
     letter-spacing: .5px;
  }
- .datepickerSection .pickerInputs .cityName input{
+ .plceholdBox .customPlaceholder{
+   font-weight: 500;
+   font-size: .7rem;
+   display: block;
+   color: #767676;
+ }
+  .pickerInputs .cityName input{
    width: 300px;
    border: none;
  }
- .datepickerSection .pickerInputs .checkinInput input{
+  .pickerInputs .checkinInput input{
     max-width: 160px;
     padding: .5rem 0;
     border: none;
     outline: none;
   }
-  .datepickerSection .datepickerBox .pickerInputs .cityName button{
+  .checkinInput .plceholdBox{
+   border: 1px solid rgb(223, 223, 223);
+   padding: 0.6rem;
+   border-radius: 8px;
+   height: 100%;
+  }
+  .checkinInput .plceholdBox:nth-of-type(1){
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+  }
+  .checkinInput .plceholdBox:nth-of-type(2){
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   border-left: 0;
+  }
+  .guestInput .plceholdBox button{
+   padding-top: .5rem;
+   font-size: .9rem;
+  }
+   .datepickerBox .pickerInputs .cityName button{
     background: #f2f2f2;
     display: flex;
     align-items: center;
@@ -87,22 +114,24 @@
     font-weight: 500;
     font-size: .7rem;
  }
- .datepickerSection .datepickerBox .pickerInputs .cityName button svg{
+ .datepickerBox .pickerInputs .cityName button svg{
     width: 14px;
     height: 14px;
     margin-right: .3rem;
  }
- .datepickerSection .datepickerBox .pickerInputs .checkinInput{
+  .datepickerBox .pickerInputs .checkinInput{
     display: flex;
     align-items: center;
-    border-right: 1px solid #cacaca;
  }
- .datepickerSection .datepickerBox .pickerInputs .guestInput{
+  .datepickerBox .pickerInputs .guestInput{
     display: flex;
     align-items: center;
     position: relative;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 0.6rem;
+    border-radius: 8px;
  }
- .datepickerSection .datepickerBox .pickerInputs .guestInput button{
+  .datepickerBox .pickerInputs .guestInput button{
     color: #000;
     font-weight: 600;
     letter-spacing: .5px;
@@ -128,7 +157,7 @@
  }
  .datepickerSection .datepickerBox .pickerInputs .guestInput .inputfigure{
    position: absolute;
-   top: 60px;
+   top: 70px;
    background-color: #fff;
    left: 0;
     background: #fff;
@@ -186,9 +215,8 @@
   @media(max-width:991px){
     .datepickerSection .datepickerBox .pickerInputs {
        flex-direction: column;
-    }
-    .datepickerSection .datepickerBox .pickerInputs .cityName {
-      border-right: none;
+       width: 100%;
+       max-width: 100%;
     }
     .datepickerSection .datepickerBox .pickerInputs .checkinInput {
         border-right: none;
@@ -202,7 +230,7 @@
   }
   @media(max-width:500px){
     .datepickerSection .pickerInputs .cityName input {
-        width: 250px;
+        max-width: 210px;
         padding-left: 0;
     }
     .datepickerSection .datepickerBox .pickerInputs .cityName {
@@ -211,6 +239,12 @@
     .container {
         padding: .3rem;
     }
+    .checkinInput .plceholdBox{
+      max-width: 50%;
+    }
+    .pickerInputs .checkinInput input {
+      max-width: 100%;
+  }
   }
   .explByCity{
     margin-top: 2rem;
@@ -237,6 +271,9 @@
    margin: auto;
    margin-bottom: .5rem;
   }
+  .pickerInputs .cityName  .plceholdBox input{
+   padding-left: 0;
+  }
   .cityBox p{
    font-weight: 600;
    font-size: .9rem;
@@ -245,4 +282,9 @@
    .cityBox span{
     font-weight: 500;
     font-size: .7rem;
+    }
+    @media(max-width:991px){
+      .checkinInput .plceholdBox{
+         width: 100%;
+      }
     }
