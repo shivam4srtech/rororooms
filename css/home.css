@@ -288,3 +288,48 @@
          width: 100%;
       }
     }
+    .trandingDest{
+      padding: 3rem 0;
+    }
+    .trandingDest h2{
+      font-weight: 600;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .trandingDest .imgBox{
+      min-height: 100%;
+      position: relative;
+    }
+    .trandingDest .imgBox img{
+      max-width: 100%;
+      border-radius: 10px;
+      min-height: 100%;
+    }
+    .trandingDest .imgcontainer{
+     min-height: 100%;
+     border: 1px solid green;
+    }
+    @media(max-width:575px){
+      .trandingDest .imgcontainer .col-sm-6{
+         padding: 0 !important;
+      }
+    }
+    .trandingDest .imgBox .txt{
+     position: absolute;
+     bottom: 10px;
+     left: 5px;
+    }
+    .trandingDest .imgBox .txt p{
+     font-weight: 600;
+     color: #fff;
+     font-size: 1.2rem;
+     margin-bottom: .2rem;
+     text-shadow: 5px 5px 10px #232323;
+     }
+     .trandingDest .imgBox .txt span{
+      font-weight: 500;
+      color: #fff;
+      font-size: .9rem;
+      margin-bottom: .2rem;
+      text-shadow: 5px 5px 10px #232323;
+      }

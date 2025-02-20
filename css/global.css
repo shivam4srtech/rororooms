@@ -117,7 +117,7 @@ input[type=number]::-webkit-outer-spin-button {
    font-weight: 500;
    font-size: .85rem;
  }
- .pageHeader  .logoBox{
+ .pageHeader  .logoBox a{
     font-weight: 700;
     font-size: 2rem;
     color: #000;
@@ -273,5 +273,71 @@ input[type=number]::-webkit-outer-spin-button {
   .headerOffcanvas .offcanvas-header{
     padding-bottom: 0;
   }
- 
 }
+/* footer */
+.footer{
+  margin-top: 2rem;
+  border-top: 1px solid #d9e2e8;
+  background-color: #f0f3f6;
+  padding-top: 2rem;
+}
+.footer .footerLinkBox h2{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #192024;
+  margin: 0 0 12px;
+}
+.footer .footerLinkBox ul li {
+  margin-bottom: 1rem;
+}
+.footer .footerLinkBox ul li a {
+  font-weight: 500;
+  color: #192024;
+  font-size: 15px;
+}  
+.footer .footerLinkBox .svgApp{
+ display: block;
+}
+.footer .footerLinkBox .svgApp svg{
+  width: 120px;
+  height: 60px;
+}
+@media(max-width:560px){
+  .p-sm-0{
+    padding: 0;
+  }
+}
+.footer .footerBottom {
+  background: #000;
+  padding: 50px 0 60px;
+}
+.footer .footerBottom .bottomBox{
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footerBottom .copyRight p{
+ color: #fff;
+ font-weight: 600;
+}
+.footer .footerBottom .social {
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ }
+ .footer .footerBottom .social a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .footer .footerBottom .social a img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  @media(max-width:560px){
+    .footer .footerBottom .bottomBox {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }

@@ -221,15 +221,40 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+@media(max-width:991px){
+    .sortBy{
+        display: none;
+    }
+}
+.sortByMobile{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 0.8rem 0.6rem -0.6rem;
+    padding: .5rem 0;
+}
+.sortByMobile .container{
+   display: flex;
+   justify-content: space-between;
+}
+.sortByMobile .container a{
+    font-weight: 600;
+    color: #1a0dab;
+    letter-spacing: .5px;
+    font-size: .9rem;
+ }
+@media(min-width:991px){
+    .sortByMobile{
+        display: none;
+    }
+}
 .sortBy .sortByBox ul{
     display: flex;
     padding-left: 0;
     gap: 15px;
 }
-.sortBy .sortByBox ul li{
+ .sortByBox ul li{
    list-style-type: none;
 }
-.sortBy .sortByBox ul li a{
+ .sortByBox ul li a{
     list-style-type: none;
     font-weight: 600;
     border: 1px solid #002970;
@@ -242,76 +267,84 @@ body{
     justify-content: center;
     text-align: center;
  }
- .sortBy .sortByBox ul li a.active{
+  .sortByBox ul li a.active{
    background-color: #002970;
    color: #fff;
  }
- .sortBy .sortByBox h2{
+  .sortByBox h2{
    font-weight: 600;
    font-size: 1rem;
    margin-right: .5rem;
    color: #000;
   }
-  .sortBy .sortByBox .form-control{
+   .sortByBox .form-control{
     box-shadow: none;
     border-radius: 4px;
     font-weight: 500;
     font-size: .9rem;
     border: none;
    }
-   .sortBy .sortByBox .form-control::placeholder{
+    .sortByBox .form-control::placeholder{
     font-weight: 500;
     font-size: .8rem;
    }
-   .sortBy .inputBox{
+   .sortByBox .inputBox{
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 0 0 0 .4rem;
    }
+   @media(max-width:991px){
+     .sortByBox ul{
+       margin-top: 1rem;
+    }
+    .sortByBox ul li{
+        margin-bottom: 1rem;
+     }
+   }
    .listingHotel{
     margin-top: 1.5rem;
    }
-   .listingHotel .filterBox{
+    .filterBox{
     border-radius: 1.2rem;
     background-color: rgb(255, 255, 255);
     padding: 10px;
    }
-   .listingHotel .filterBox .filterHeader{
+    .filterBox .filterHeader{
    display: flex;
    justify-content: space-between;
    align-items: center;
    border-bottom: 1px solid #ccc;
    padding-bottom: 1rem;
    }
-   .listingHotel .filterBox .filterHeader h3{
+    .filterBox .filterHeader h3{
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
     }
-    .listingHotel .filterBox .filterHeader a{
+     .filterBox .filterHeader a{
         font-weight: 500;
         cursor: pointer;
         color: rgb(119, 119, 119);
         font-size: 12px;
         text-transform: uppercase;
     }
-    .listingHotel .filterBox .filterItem{
+     .filterBox .filterItem{
        padding-top: 1rem;
     }
-    .listingHotel .filterBox .filterItem h4{
+     .filterBox .filterItem h4{
         font-size: 14px;
         font-weight: 600;
         color: rgb(20, 24, 35);
         margin-bottom: 1rem;
     }
-    .listingHotel .filterBox .filterItem .checkSet{
+     .filterBox .filterItem .checkSet{
        display: flex;
        align-items: center;
        margin-bottom: 1rem;
     }
-    .listingHotel .filterBox .filterItem .checkSet .checkBox{
+     .filterBox .filterItem .checkSet .checkBox{
         border: 2px solid #a6adb3;
         width: 1rem;
         height: 1rem;
@@ -319,16 +352,16 @@ body{
         border-radius: 0;
         cursor: pointer;
      }
-     .listingHotel .filterBox .filterItem .checkSet .label{
+      .filterBox .filterItem .checkSet .label{
        font-weight: 500;
        color: #000;
        font-size: .78rem;
      }
-     .listingHotel .filterBox .filterItem .checkSet .label img{
+      .filterBox .filterItem .checkSet .label img{
        object-fit: contain;
        height: 1rem;
       }
-      .listingHotel .filterBox .filterItem .checkSet .label .ratingBadge{
+       .filterBox .filterItem .checkSet .label .ratingBadge{
         width: 2rem;
         height: 1.4rem;
         background-color: var(--primary-color);
@@ -381,6 +414,7 @@ body{
        display: flex;
        gap: 10px;
        margin-bottom: .5rem;
+       flex-wrap: wrap;
        }
        .hotelItem .stayType img{
         object-fit: contain;
@@ -524,4 +558,23 @@ body{
         font-weight: 500;
        color: rgb(119, 119, 119);
        font-size: .8rem;
+     }
+     @media(max-width:991px){
+        .stickySearch{
+            position: static;
+        }
+     }
+     @media(max-width:560px){
+        .mobilePadding{
+            padding: 0;
+        }
+     }
+     @media(max-width:560px){
+        .hotelItem .priceBox {
+            align-items: flex-start;
+            margin-top: 1rem;
+        }
+        .hotelItem .aminityBox {
+           max-width: 100%;
+        }
      }
