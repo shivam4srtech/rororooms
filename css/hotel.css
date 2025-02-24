@@ -1,0 +1,677 @@
+.stickySearch{
+    background: linear-gradient(135deg, #2c74c9, #1b4b89, #74a9f7);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+body{
+    background-color: whitesmoke;
+}
+.container{
+    max-width: 1200px;
+}
+.stickySearch .stichySearchBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+ .ui-datepicker{
+  z-index: 100 !important;
+  top: 180px !important;
+}
+.stichySearchBox .inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.stichySearchBox .inputBox .form-control{
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    border: none;
+    text-transform: capitalize;
+    display: block;
+    height: 2.8rem;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: none;
+}
+.stichySearchBox .inputBox .form-control::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+}
+.stichySearchBox .inputBox .location{
+    min-width: 300px
+}
+.stichySearchBox .inputBox input{
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    border: none;
+    text-transform: capitalize;
+    display: block;
+    height: 2.8rem;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: none;
+}
+.stichySearchBox .inputBox span{
+    line-height: normal;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding-bottom: 0.5rem;
+    padding-left: 0.2rem;
+    letter-spacing: .5px;
+}
+.stichySearchBox .inputBox span{
+    line-height: normal;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    padding-bottom: 0.5rem;
+    padding-left: 0.2rem;
+    letter-spacing: .5px;
+}
+.stickySearch .searchBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stickySearch .searchBtn button{
+    line-height: normal;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(22, 107, 211) !important;
+    text-transform: uppercase !important;
+    border-radius: 10px !important;
+}
+/* guest input */
+.stichySearchBox .inputBox .dispalyinputfigure{
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    border: none;
+    text-transform: capitalize;
+    display: block;
+    height: 2.8rem;
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: none;
+
+}
+ .guestInput{
+    position: relative;
+ }
+ .guestInput button{
+    color: #000;
+    font-weight: 600;
+    letter-spacing: .5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+ }
+
+
+  .guestInput .inputfigure{
+   position: absolute;
+   top: 10px;
+   background-color: #fff;
+   left: 0;
+    background: #fff;
+    width: 18rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    z-index: 300;
+    border: 1px solid #ddd;
+    display: none;
+
+ }
+  .guestInput .inputfigure .figurebox{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1rem;
+ }
+  .guestInput .inputfigure .figurebox h5{
+    font-weight: 600;
+    font-size: .8rem;
+    color: #000;
+  }
+   .guestInput .inputfigure .figurebox h5 small{
+  font-size: .7rem;
+  font-weight: 500;
+  display: block;
+  }
+   .guestInput .inputfigure .figurebox .values{
+   display: flex;
+   align-items: center;
+}
+ .guestInput .inputfigure .figurebox .values input{
+    max-width: 50px !important;
+    min-width: 50px !important;
+    box-shadow: none;
+    border-radius: 0;
+    height: 35px;
+    border: 1px solid #6c757d;
+    border-left: none;
+    border-right: none;
+ }
+  .guestInput .inputfigure .figurebox .values button{
+    width: 2.5rem;
+    height: 35px;
+    font-size: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6c757d;
+ }
+  .guestInput .inputfigure .figurebox .values button:nth-of-type(1){
+   border-radius: 10px  0 0 10px;
+ }
+  .guestInput .inputfigure .figurebox .values button:nth-of-type(2){
+    border-radius: 0  10px 10px 0;
+  }
+  @media(max-width: 991px){
+    .stickySearch .stichySearchBox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .stichySearchBox .inputBox input.form-control{
+       min-width: 400px;
+    }
+    .guestInputBox{
+        min-width: 400px;
+    }
+  }
+  @media (max-width: 450px) {
+    .stichySearchBox .inputBox input.form-control {
+        min-width: 100%;
+    }
+    .stichySearchBox .inputBox {
+        width: 100%;
+    }
+    .guestInputBox{
+        min-width: 100%;
+    }
+}
+/* hotel header */
+.hotelHeader{
+    padding: 3rem 0;
+}
+.hotelHeader .htlName{
+    display: flex;
+}
+.hotelHeader .htlName h2{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.hotelHeader .htlName img{
+   object-fit: contain;
+}
+.hotelHeader .htlName a{
+    font-weight: 600;
+    color: #2b72d8;
+    font-size: .7rem;
+    margin-right: .5rem;
+ }
+ .hotelHeader .htlName address span{
+    color: rgb(74, 74, 74);
+    font-weight: 500;
+    font-size: .8rem;
+    margin-right: .5rem;
+ }
+ .hotelImages .carousel-item img{
+    max-height: 400px;
+    border-radius: 10px;
+ }
+ .hotelImages .carousel-item{
+    border-radius: 10px;
+ }
+ .hotelImages {
+    margin-top: 1rem;
+ }
+ .hotelHeader .priceBox{
+    border-radius: 1.2rem;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgb(228, 228, 228);
+ }
+ .propertyType {
+    margin-bottom: .2rem;
+ }
+ .propertyType span{
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 0.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem .4rem;
+    font-size: .7rem;
+    font-weight: 600;
+ }
+ .propertyType span svg{
+    margin: 0 .2rem;
+ }
+ .hotelHeader .priceBox h3{
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .6rem;
+ }
+ .hotelHeader .priceBox .roomType{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+ }
+
+ .hotelHeader .priceBox .roomType span{
+    color: rgb(20, 24, 35);
+    font-size: .8rem;
+    font-weight: 500;
+ }
+ .hotelHeader .priceBox .roomType svg{
+    fill: rgb(20, 24, 35);
+   width: 16px;
+ }
+ .hotelHeader .priceBox .vlueBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+ }
+ .hotelHeader .priceBox .vlueBox h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+ }
+ .hotelHeader .priceBox .vlueBox span{
+    color: rgb(113, 113, 113);
+    font-weight: 500;
+    font-size: .7rem;
+ }
+ .hotelHeader .priceBox .vlueBox span strong{
+   font-weight: 600;
+ }
+ .hotelHeader .btnOption{
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    color: #fff;
+  }
+  .hotelHeader .btnOption img{
+   max-width: 25px;
+   object-fit: contain;
+   margin-left: .5rem;
+  }
+  .hotelHeader .aminityBox{
+    border-radius: 1.2rem;
+    padding: 1rem 0.8rem;
+    border: 1px solid rgb(228, 228, 228);
+    margin-top: 1rem;
+ }
+ .hotelHeader .aminityBox h3{
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .6rem;
+ }
+ .hotelHeader .aminityItem {
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.hotelHeader .aminityItem svg{
+    height: 16px;
+    width: 16px;
+    fill: #a2a2a2;
+}
+.hotelHeader .aminityItem span{
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 0.2rem;
+    color: rgb(70, 72, 77);
+}
+.hotelImages .carousel {
+    max-width: 700px;
+}
+.scrollspyList{
+    position: sticky;
+    top: 110px;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 5px;
+    max-height: 400px;
+}
+
+.scrollspyList .scrollspyListBox a{
+    text-decoration: none;
+    color: rgb(20, 24, 35);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 1.2rem 2rem;
+    text-transform: capitalize;
+}
+.scrollspyList .scrollspyListBox a.active{
+    color: rgb(34, 116, 224);
+    border-bottom: 2px solid rgb(34, 116, 224);
+    font-weight: 600;
+}
+.roomeType{
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    margin-bottom: 1rem;
+}
+.roomeType .roomDtl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px 18px 20px;
+}
+.roomeType .roomDtl .typedtl h3{
+   font-weight: 600;
+   font-size: 1.4rem;
+   margin-bottom: .6rem;
+   text-align: right;
+}
+.roomeType .roomDtl .typedtl .roomSize{
+    font-size: 14px;
+    color: #222;
+    text-align: right;
+}
+.roomeType .roomDtl .typeImg{
+   position: relative;
+    width: 200px;
+}
+.roomeType .roomDtl .typeImg img{
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.roomeType .roomDtl .typeImg a{
+    position: absolute;
+   top: 5px;
+   left: 5px;
+   background-color: #201f1f32;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 1.8rem;
+   height: 1.8rem;
+   border-radius: 4px;
+ }
+ .roomeType .aminityBox {
+    margin-top: 1rem;
+}
+.roomeType .aminityItem {
+    display: flex;
+    max-width: 400px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: right;
+}
+.roomeType .aminityItem svg {
+    height: 16px;
+    width: 16px;
+    fill: #a2a2a2;
+}
+.roomeType .aminityItem span {
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 0.2rem;
+    color: rgb(70, 72, 77);
+}
+.roomeType .aminityItem .isfreeConcelation span {
+   color: rgb(24, 161, 96);
+}
+.roomeType .aminityItem .nofreeConcelation span {
+    color: #d0011b;
+ }
+.roomeType .aminityItem .isfreeConcelation svg {
+    fill: rgb(24, 161, 96);
+ }
+ .roomeType .aminityItem .nofreeConcelation svg {
+    fill: #d0011b;
+ }
+ .roomDtlFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px 18px 20px;
+ }
+ .roomDtlFooter .feeTax h3{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #222;
+ }
+ .roomDtlFooter .feeTax h3 span{
+    font-weight: 500;
+    font-size: .8rem;
+    color: #999;
+    text-decoration: line-through;
+ }
+ .roomDtlFooter .feeTax  span{
+    font-weight: 500;
+    font-size: .8rem;
+    color: #999;
+ }
+ .roomDtlFooter .feeTax h3 strong{
+    font-weight: 500;
+    font-size: .8rem;
+    color: #999;
+ }
+ .roomeType hr{
+    border: 1px solid #7474744d;
+ }
+ .roomDtlFooter .selectBtn button{
+    width: 180px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .6rem 0;
+    border: 1px solid #999;
+    font-weight: 600;
+    background-color: transparent;
+    font-size: .9rem;
+ }
+ .roomDtlFooter .selectBtn button:hover{
+   background-color: var(--primary-color);
+   border: 1px solid var(--primary-color) !important;
+ }
+ .roomDtlFooter .selectBtn button:hover svg{
+   fill: #000 !important;
+  }
+ .roomDtlFooter .selectBtn button.active{
+    border: 1px solid #24d267;
+ }
+ .roomDtlFooter .selectBtn button svg{
+   width: 16px;
+   margin-right: .5rem;
+   fill: #000;
+ }
+ .roomDtlFooter .selectBtn button.active svg{
+   fill: #24d267;
+  }
+
+.allAnimities {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    margin-bottom: 1rem;
+    padding: 12px 20px 18px 20px;
+}
+.allAnimities .aminityBox h3 {
+    line-height: normal;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .8rem;
+}
+.allAnimities .aminityItem {
+    display: flex;
+    max-width: 300px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.allAnimities .aminityItem svg {
+    height: 16px;
+    width: 16px;
+    fill: #a2a2a2;
+}
+.allAnimities .aminityItem span {
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 0.2rem;
+    color: rgb(70, 72, 77);
+}
+ .aminityBox .item small {
+    background-color: #e8eaed;
+    border-radius: 2px;
+    margin-left: 2px;
+    padding: 2px 4px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #202124;
+    letter-spacing: .2px;
+}
+.ratingReview{
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    margin-bottom: 1rem;
+    padding: 12px 20px 18px 20px;
+    border: 1px solid rgba(180, 180, 180, 0.3);
+}
+.ratingReview h3 {
+    line-height: normal;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: .8rem;
+}
+.ratingReview .raterevBox {
+    display: flex;
+    justify-content: space-between;
+}
+.ratingReview .raterevBox .rateBox{
+   display: flex;
+   min-width: 40%;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.ratingReview .raterevBox .rateBox .rateVale{
+    background-color: rgb(61, 128, 0);
+    height: 36px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    cursor: default;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+ }
+ .ratingReview .raterevBox .rateBox .rateVale svg{
+  margin-left: .5rem;
+ }
+ .ratingReview .raterevBox .rateBox strong{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.87);
+   }
+   .ratingReview .raterevBox .rateBox p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #222;
+}
+.ratingReview .raterevBox .rateinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ratingReview .raterevBox .rateinfo .rateItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 5px;
+}
+
+.ratingReview .raterevBox .rateinfo .starValue{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.ratingReview .raterevBox .rateinfo .starValue span{
+    font-weight: 600;
+    font-size: .8rem;
+}
+.ratingReview .raterevBox .rateinfo .rateItem .percentage{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.54);
+}
+.ratingReview .raterevBox .rateinfo .rateItem .percentage{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.54);
+}
+.progress-container {
+    max-width: 100%;
+    width: 350px;
+    background-color: #e0e0e042;
+    border-radius: 25px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress-bar {
+    height: 4px;
+    width: 0;
+    background: rgb(245, 166, 35);
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    transition: width 0.5s ease-in-out;
+  }
