@@ -293,7 +293,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="scrollspyList col-md-3">
+                <div class="scrollspyList col-lg-3 mobilePadding">
                     <div id="simple-list-example" class="simple-list-example-scrollspy scrollspyListBox">
                         <a class="" href="#simple-list-item-1">Stay Options</a>
                         <a class="" href="#simple-list-item-2">Amenities</a>
@@ -303,7 +303,7 @@
                         <a class="" href="#simple-list-item-6">Similar Properties</a>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-lg-9 mobilePadding">
                     <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
                         <div id="simple-list-item-1">
                             <div class="roomeType">
@@ -1093,6 +1093,29 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
      <script src="./JS/global.js"></script>
+     <script>
+          document.addEventListener('activate.bs.scrollspy', function (event) {
+  const activeLink = document.querySelector('.simple-list-example-scrollspy a.active');
+
+  if (activeLink) {
+    const container = document.querySelector('.simple-list-example-scrollspy');
+
+    // Check if the active link is fully visible in the container
+    const linkRect = activeLink.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
+
+    if (linkRect.left < containerRect.left || linkRect.right > containerRect.right) {
+      // Smoothly scroll into view, keeping it centered
+      activeLink.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest',
+      });
+    }
+  }
+});
+
+     </script>
      <script>
         document.addEventListener("DOMContentLoaded", function () {
             const button = document.querySelector(".dispalyinputfigure");

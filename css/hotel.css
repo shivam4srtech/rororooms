@@ -923,3 +923,38 @@ body{
     font-size: .9rem;
     border-radius: 4px;
   }
+  @media(max-width:991px){
+    .stickySearch {
+       position: static;
+    }
+    .hotelImages .carousel {
+       margin-bottom: 1rem;
+    }
+    .scrollspyListBox{
+        display: flex;
+        overflow: auto;
+    }
+    .scrollspyListBox a{
+        white-space: nowrap;
+    }
+    .scrollspyList {
+        top: 72px;
+    }
+  }
+  @media(max-width:768px){
+    .ratingReview .raterevBox {
+       flex-direction: column;
+       gap: 20px;
+    }
+    .ratingReview .raterevBox .rateinfo .rateItem {
+        justify-content: flex-start;
+    }
+  }
+  @media(max-width:500px){
+    .progress-container{
+        max-width: 250px;
+    }
+    .mobilePadding{
+        padding: 0;
+    }
+  }
