@@ -25,7 +25,7 @@
             <div class="navLinkBox">
                 <ul>
                     <li><a href="#">Business with us</a></li>
-                    <li><a href="#">List your Hotel</a></li>
+                    <li><a href="./register-hotel.html">List your Hotel</a></li>
                     <li>
                         <a href="#" class="displayFloatingBox">Connect US <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
                         <div class="floatingBoxes">
@@ -62,7 +62,7 @@
                 </ul>
             </div>
             <div class="loginbtnBox">
-                <a href="#">
+                <a href="./login.html">
                     <img src="./images/people-icon.svg" alt="login">
                     <span>signup/login</span>
                 </a>
@@ -79,7 +79,7 @@
             <div class="navLinkBox">
                 <ul>
                     <li><a href="#">Business with us</a></li>
-                    <li><a href="#">List your Hotel</a></li>
+                    <li><a href="./register-hotel.html">List your Hotel</a></li>
                     <li>
                         <a href="#" class="displayFloatingBox">Connect US <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
                         <div class="floatingBoxes">
@@ -1100,12 +1100,10 @@
   if (activeLink) {
     const container = document.querySelector('.simple-list-example-scrollspy');
 
-    // Check if the active link is fully visible in the container
     const linkRect = activeLink.getBoundingClientRect();
     const containerRect = container.getBoundingClientRect();
 
     if (linkRect.left < containerRect.left || linkRect.right > containerRect.right) {
-      // Smoothly scroll into view, keeping it centered
       activeLink.scrollIntoView({
         behavior: 'smooth',
         inline: 'center',

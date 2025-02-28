@@ -1,0 +1,159 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../images/bg-1.avif') no-repeat center center/cover;
+    overflow: hidden;
+}
+.loginContainer .loginBox{
+    border: 1px solid red;
+    max-width: 400px;
+    margin: auto;
+}
+.loginContainer  h2{
+   font-weight: 600;
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+}
+.loginContainer .container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.loginContainer .container.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+}
+.loginContainer .input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.loginContainer .input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.loginContainer .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.loginContainer .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.loginContainer .btn:hover {
+    background: #0056b3;
+}
+.loginContainer .edit-btn {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 14px;
+}
+.otpInputs{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: .2rem;
+}
+.otpInputs .form-control{
+   width: 30px;
+   box-shadow: none;
+   font-weight: 500;
+   font-size: 1rem;
+   border-radius: 2px;
+   border: 2px solid #ccc;
+}
+.otpInputs .form-control:focus{
+   border: 1px solid var(--primary-color);
+ }
+#otp-box label{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.err-msg svg{
+    width: 14px;
+    fill: rgb(229, 52, 66);
+}
+.err-msg{
+    text-align: left;
+ }
+.err-msg span{
+   font-weight: 500;
+   font-size: 12px;
+   color: rgb(229, 52, 66);
+}
+.otpSent{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: .5rem;
+}
+.otpSent span{
+  font-weight: 500;
+  font-size: .8rem;
+  letter-spacing: .5px;
+}
+.otpSent svg{
+   width: 14px;
+}
+.otpSent .edit-btn{
+    margin-top: 0;
+ }
+ .isOtp{
+    text-align: left;
+    margin-top: .5rem;
+ }
+ .isOtp h4{
+   font-weight: 500;
+   font-size: .7rem;
+   color: #222;
+ }
+ .isOtp h4 a{
+   color: #1a0dab;
+  }
+  .isOtp h4 a:hover{
+   text-decoration: underline;
+   }
+   .input-group .form-control{
+    font-weight: 500;
+    font-size: .9rem;
+    color: #222;
+    letter-spacing: .5px;
+    border-radius: 2px !important;
+    max-width: 100%;
+    box-shadow: none; 
+    border: 2px solid #ccc !important;
+   }
+   .input-group .form-control::placeholder{
+    font-weight: 500;
+    font-size: .9rem;
+    color: #222;
+    letter-spacing: .5px;
+   }
+   .input-group .form-control:focus{
+    border: 2px solid var(--primary-color) !important;
+   }
