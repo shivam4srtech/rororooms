@@ -69,6 +69,7 @@ html {
     /* Accent Colors */
     --accent-color: #FF7F50; /* Sunset Orange */
     --hover-color: #008080; /* Teal */
+    --link: #1a0dab;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 

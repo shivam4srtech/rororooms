@@ -211,6 +211,326 @@
                         </div>
                     </div>
                 </div>
+                <div class="step">
+                    <h3>Facilities in your property</h3>
+                    <p>Let guest know what your property has to offer</p>
+                    <div class="optionSet">
+                        <div class="customeCheck">
+                            <input type="checkbox">
+                            <label  for="flexCheckDefault">
+                              Breakfast
+                            </label>
+                        </div>
+                    </div>
+                    <div class="optionSet">
+                        <div class="customeCheck">
+                            <input type="checkbox">
+                            <label  for="flexCheckDefault">
+                              Elevator
+                            </label>
+                        </div>
+                    </div>
+                    <div class="optionSet">
+                        <div class="customeCheck">
+                            <input type="checkbox">
+                            <label  for="flexCheckDefault">
+                              In-house Restaurant
+                            </label>
+                        </div>
+                    </div>
+                    <div class="optionSet">
+                        <div class="customeCheck">
+                            <input type="checkbox">
+                            <label  for="flexCheckDefault">
+                              AC
+                            </label>
+                        </div>
+                    </div>
+                    <div class="optionSet">
+                        <div class="customeCheck">
+                            <input type="checkbox">
+                            <label  for="flexCheckDefault">
+                              Sanitized Stays
+                            </label>
+                        </div>
+                    </div>
+                    <h3>Must have facilities</h3>
+                    <div class="facilityBox">
+                        <div class="facItem">
+                            Geyser
+                        </div>
+                        <div class="facItem">
+                            Power Backup
+                        </div>
+                        <div class="facItem">
+                            Free Wifi
+                        </div>
+                        <div class="facItem">
+                            Fire-Extinguisher
+                        </div>
+                        <div class="facItem">
+                            CCTV Cameras
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <h3>Add Property Images</h3>
+                    <p>Upload at least 6 images (0 out of six uploaded)</p>
+                     <progress value="0" max="100" style="width: 100%;"></progress>
+                    <div class="optionSet">
+                        <div style="width: 100%;">
+                            <div class="d-flex justify-content-between">
+                                <small>0 images uploaded</small>
+                                <a href="#" class="viewsample" data-bs-toggle="modal" data-bs-target="#imageSample">View Sample</a>
+                            </div>
+                            <div class="upload-container">
+                                <label class="upload-box">
+                                    <i>➕</i>
+                                    <p>Upload Multiple Images</p>
+                                    <input type="file" class="fileInput" accept="image/*" multiple onchange="addFiles(event, 'fileList2', 'clearAllBtn2')">
+                                </label>
+                                <div class="file-list" id="fileList2"></div>
+                                <button class="clear-all-btn" id="clearAllBtn2" onclick="clearAllFiles('fileList2', 'clearAllBtn2')">Clear All</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <h3>Update KYC Details</h3>
+                    <p>Mandetory as per government regulation</p>
+                    <div class="optionSet">
+                        <div style="width: 100%;">
+                            <div class="mb-3">
+                                <small>Upload Aadhar</small>
+                            </div>
+                            <div class="row">
+                                <div class="upload-container col-md-6">
+                                    <label class="upload-box">
+                                        <i>➕</i>
+                                        <p>Upload Front Side Image</p>
+                                        <input type="file" class="fileInput" accept="image/*" data-multiple="false" onchange="addFiles(event, 'fileList1', 'clearAllBtn1')">
+                                    </label>
+                                    <div class="file-list" id="fileList1"></div>
+                                    <button class="clear-all-btn" id="clearAllBtn1" onclick="clearAllFiles('fileList1', 'clearAllBtn1')">Clear All</button>
+                                </div>
+                                <div class="upload-container col-md-6">
+                                    <label class="upload-box">
+                                        <i>➕</i>
+                                        <p>Upload Back Side Image</p>
+                                        <input type="file" class="fileInput" accept="image/*" data-multiple="false" onchange="addFiles(event, 'fileList1', 'clearAllBtn1')">
+                                    </label>
+                                    <div class="file-list" id="fileList1"></div>
+                                    <button class="clear-all-btn" id="clearAllBtn1" onclick="clearAllFiles('fileList1', 'clearAllBtn1')">Clear All</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="optionSet">
+                        <small>Verify Your Email Id</small>
+                    </div>
+                    <div class="inputBox mb-3">
+                        <input type="text" class="form-control" placeholder=" ">
+                        <label for="">Owner's registered email ID</label>
+                    </div>
+                    <div class="optionSet">
+                        <small>Aadhar Details</small>
+                    </div>
+                    <div class="inputBox mb-3">
+                        <input type="text" class="form-control" placeholder=" ">
+                        <label for="">Name on Aadhar</label>
+                    </div>
+                    <div class="inputBox mb-3">
+                        <input type="text" class="form-control" placeholder=" ">
+                        <label for="">12 digit Aadhar Number</label>
+                    </div>
+                </div>
+                <div class="step">
+                    <h3>Preview Details</h3>
+                    <div class="imgCarousel mb-3">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="editImg">
+                                <a href="#">Edit</a>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./images/img-1.avif" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/img-2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/img-3.avif" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/img-5.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./images/img-6.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h3>Hotel Siddhivinayak</h3>
+                        <div class="editImg">
+                            <a href="#">Edit</a>
+                        </div>
+                    </div>
+                    <p class="mb-3">Hotel Siddhivinayak Alkapuri Station Road, Yashwant Viva Township Mumbai 401209 Maharastra</p>
+                    <div class="d-flex justify-content-between">
+                        <h3>Facilities you offer</h3>
+                        <div class="editImg">
+                            <a href="#">Edit</a>
+                        </div>
+                    </div>
+                    <div class="aminityItem mb-3">
+                        <div class="item">
+                            <svg viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2a2 2 0 0 0 2-2V5c0-1.11-.89-2-2-2zm-4 10c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V5h10v8zm4-5h-2V5h2v3z"></path></svg>
+                            <span>Breakfast</span>
+                            <small>free</small>
+                        </div>
+                        <div class="item">
+                            <svg viewBox="0 0 24 24"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 0 0-6 0zm-4-4l2 2a7.074 7.074 0 0 1 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"></path></svg>
+                            <span>Wifi</span>
+                            <small>free</small>
+                        </div>
+                        <div class="item">
+                            <svg viewBox="0 0 24 24"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22v-2z"></path></svg>
+                            <span>Air conditioning</span>
+                        </div>
+                        <div class="item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="RestaurantIcon-sc-1f8rkpo-0 GdODI"><path d="M20.667 0a1 1 0 0 0-1 1v29.667a1.333 1.333 0 0 0 2.666 0V20c0-.368.298-.667.667-.667h2.333A1.66 1.66 0 0 0 27 17.685v-.027999999999999997C26.915 8.073 23.776 0 20.667 0M14.333 0C13.597 0 13 .597 13 1.333V8a2.66 2.66 0 0 1-.761 1.867.334.334 0 0 1-.572-.234v-8.3a1.333 1.333 0 0 0-2.666 0V9.63a.334.334 0 0 1-.572.233 2.66 2.66 0 0 1-.761-1.864V1.332a1.333 1.333 0 0 0-2.666 0v6.667a5.34 5.34 0 0 0 3.556 5.029.67.67 0 0 1 .444.628v17.009a1.333 1.333 0 0 0 2.666 0V13.656c0-.282.178-.534.444-.628a5.345 5.345 0 0 0 3.556-5.029V1.332c0-.736-.597-1.333-1.333-1.333z"></path></svg>
+                            <span>Restaurant</span>
+                        </div>
+                        <div class="item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="SwimmingIcon-sc-2o20qz-0 fMCHvN"><path d="M9.431 18.767a2.81 2.81 0 0 0 1.983 1.165 3.72 3.72 0 0 0 2.517-1.356 3.333 3.333 0 0 1 5.716.52c.295.499.823.813 1.401.836a2.49 2.49 0 0 0 1.969-1.128c.198-.34.46-.639.772-.879a.333.333 0 0 0 .065-.456l-6.145-8.605a2 2 0 0 1 1.142-3.103l5.232-1.309a2 2 0 0 0-.971-3.88L17.879 1.88a6 6 0 0 0-3.425 9.31l.393.551-7.333 5.04a.333.333 0 0 0 .091.593 3.27 3.27 0 0 1 1.825 1.393z"></path><path d="M26.906 8.006a3.166 3.166 0 1 1-4.478 4.478 3.166 3.166 0 1 1 4.478-4.478M11.413 24.597a7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.37 6.37 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.419 1.363 1.363 0 0 0-1.424-1.239 4.48 4.48 0 0 1-3.567-2.092 1.4 1.4 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.74 3.74 0 0 1-3.2-1.975 1.39 1.39 0 0 0-2.29-.209 5.74 5.74 0 0 1-4.133 2.184 4.74 4.74 0 0 1-3.68-2.107 1.39 1.39 0 0 0-2.184-.122c-.017.024-1.956 2.427-4.145 2.267a1.307 1.307 0 0 0-1.414 1.192l-.004.073a1.33 1.33 0 0 0 1.261 1.401c.101 0 .199.008.296.008a7.78 7.78 0 0 0 4.976-2.143 6.98 6.98 0 0 0 4.88 2.096zM30.573 28.759a4.51 4.51 0 0 1-3.567-2.092 1.398 1.398 0 0 0-2.288.029 4.5 4.5 0 0 1-3.671 2.077 3.73 3.73 0 0 1-3.2-1.976 1.393 1.393 0 0 0-2.29-.208 5.74 5.74 0 0 1-4.133 2.184 4.75 4.75 0 0 1-3.692-2.107 1.388 1.388 0 0 0-2.184-.122c-.017.024-1.853 2.275-3.989 2.275h-.156a1.304 1.304 0 0 0-1.401 1.199l-.003.057a1.335 1.335 0 0 0 1.26 1.403h.001c.101 0 .199.008.296.008a7.8 7.8 0 0 0 4.976-2.143 6.99 6.99 0 0 0 4.88 2.096 7.8 7.8 0 0 0 5.08-2 6.1 6.1 0 0 0 4.555 2 6.87 6.87 0 0 0 4.829-2 6.43 6.43 0 0 0 4.881 1.976 1.333 1.333 0 0 0 1.241-1.416 1.353 1.353 0 0 0-1.427-1.241z"></path></svg>
+                            <span>Swimming Pool</span>
+                        </div>
+                        <div class="item">
+                            <svg viewBox="0 0 24 24"><path d="M17 5H3a2 2 0 0 0-2 2v9h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-6-6zm-2 2h1l3 3h-4V7zM9 7h4v3H9V7zM3 7h4v3H3V7zm3 10.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm12 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zM21 14h-.78c-.55-.61-1.34-1-2.22-1s-1.67.39-2.22 1H8.22c-.55-.61-1.33-1-2.22-1s-1.67.39-2.22 1H3v-2h18v2z"></path></svg>
+                            <span>Airport shuttle</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h3>Property Frontdesk Number</h3>
+                        <div class="editImg">
+                            <a href="#">Edit</a>
+                        </div>
+                    </div>
+                    <p class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" class="mr-4"  fill="#222"><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg> +91 72198 81827</p>
+                    <div class="d-flex justify-content-between">
+                        <h3>Rooms & Floors</h3>
+                        <div class="editImg">
+                            <a href="#">Edit</a>
+                        </div>
+                    </div>
+                    <div class="roomNfloor">
+                        <p>Number of rooms</p>
+                        <strong>12</strong>
+                    </div>
+                    <div class="roomNfloor">
+                        <p>Number of floors</p>
+                        <strong>1</strong>
+                    </div>
+
+                </div>
+                <div class="step">
+                    <h3>Terms of Service</h3>
+                    <div class="termsofService">
+                        <div class="serviceItem">
+                            <div class="d-flex justify-content-between">
+                                <h5>Commission</h5>
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Select India if you have earned income from India only. If you have received any income from a foreign country, select Both or select NRI if you have non-resident Indian status."
+                                    data-bs-trigger="click">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="20" height="20">
+                                </button>
+                            </div>
+                            <p>Flat service fee of 29% plus Rs. 40 on every check-in GST as applicable</p>
+                        </div>
+                        <div class="serviceItem">
+                            <div class="d-flex justify-content-between">
+                                <h5>Inventory Management</h5>
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Select India if you have earned income from India only. If you have received any income from a foreign country, select Both or select NRI if you have non-resident Indian status."
+                                    data-bs-trigger="click">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="20" height="20">
+                                </button>
+                            </div>
+                            <p>Flat service fee of 29% plus Rs. 40 on every check-in GST as applicable</p>
+                        </div>
+                        <div class="serviceItem">
+                            <div class="d-flex justify-content-between">
+                                <h5>Dynamic Pricing</h5>
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Select India if you have earned income from India only. If you have received any income from a foreign country, select Both or select NRI if you have non-resident Indian status."
+                                    data-bs-trigger="click">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="20" height="20">
+                                </button>
+                            </div>
+                            <p>Flat service fee of 29% plus Rs. 40 on every check-in GST as applicable</p>
+                        </div>
+                        <div class="serviceItem">
+                            <div class="d-flex justify-content-between">
+                                <h5>OTA Demand Management</h5>
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Select India if you have earned income from India only. If you have received any income from a foreign country, select Both or select NRI if you have non-resident Indian status."
+                                    data-bs-trigger="click">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="20" height="20">
+                                </button>
+                            </div>
+                            <p>Flat service fee of 29% plus Rs. 40 on every check-in GST as applicable</p>
+                        </div>
+                        <div class="serviceItem">
+                            <div class="d-flex justify-content-between">
+                                <h5>Walk-in Contribution</h5>
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="bottom"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Select India if you have earned income from India only. If you have received any income from a foreign country, select Both or select NRI if you have non-resident Indian status."
+                                    data-bs-trigger="click">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="20" height="20">
+                                </button>
+                            </div>
+                            <p>Flat service fee of 29% plus Rs. 40 on every check-in GST as applicable</p>
+                        </div>
+                    </div>
+                    <div class="ensureBox">
+                        <h3>Please Ensure</h3>
+                        <ul>
+                            <li>There is no illegal operation at your property</li>
+                            <li>There is no illegal operation at your property</li>
+                            <li>There is no illegal operation at your property</li>
+                            <li>There is no illegal operation at your property</li>
+                            <li>There is no illegal operation at your property</li>
+                        </ul>
+                    </div>
+                    <div class="agreeTc">
+                        <input type="checkbox" name="agreeTC">
+                        <label for="agreeTC">I agree to RORO Rooms <a href="#">terms of services</a></label>
+                    </div>
+                </div>
                 <div class="buttons">
                     <button type="button" id="prevBtn" disabled>Previous</button>
                     <button type="button" id="nextBtn" disabled>Next</button>
@@ -283,11 +603,107 @@
             </div>
         </div>
      </footer>
+     <div class="modal fade imageSample" id="imageSample" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Sample Room Images</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body sampleImg">
+               <h4 class="imageType">1. Room Center</h4>
+               <img src="./images/sample-1.avif" alt="sample-1">
+               <h4 class="imageType">2. Room Right</h4>
+               <img src="./images/sample-1.avif" alt="sample-2">
+               <h4 class="imageType">3. Room Left</h4>
+               <img src="./images/sample-1.avif" alt="sample-3">
+               <h4 class="imageType">4. Room Right Bottom</h4>
+               <img src="./images/sample-1.avif" alt="sample-3">
+               <h3>Sample Reception images</h3>
+               <h4 class="imageType">1. Reception Desk</h4>
+               <img src="./images/reception-img.jpeg" alt="reception-img">
+               <h4 class="imageType">2. Reception Hall</h4>
+               <img src="./images/reception-hall.jpeg" alt="reception-img">
+               <h3>Sample Washroom images</h3>
+               <h4 class="imageType">1. Mirror, Washbasin and Commode</h4>
+               <img src="./images/commode.jpeg" alt="reception-img">
+               <h4 class="imageType">2. Bathing Area and Commode</h4>
+               <img src="./images/commode.jpeg" alt="reception-img">
+               <h3>Sample Facade images</h3>
+               <h4 class="imageType">1. Facade Front</h4>
+               <img src="./images/facade-1.jpg" alt="reception-img">
+               <h4 class="imageType">2. Facade Right</h4>
+               <img src="./images/facade-1.jpg" alt="reception-img">
+               <h4 class="imageType">2. Facade Left</h4>
+               <img src="./images/facade-1.jpg" alt="reception-img">
+            </div>
+          </div>
+        </div>
+      </div>
      <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
      <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
      <script src="./JS/global.js"></script>
+     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+     <script>
+        function addFiles(event, fileListId, clearBtnId) {
+            const input = event.target;
+            const fileList = document.getElementById(fileListId);
+            const clearAllBtn = document.getElementById(clearBtnId);
+            const isMultiple = input.hasAttribute("multiple");
+            const isForcedSingle = input.dataset.multiple === "false"; // Handle forced single mode
+
+            // If single file mode, clear previous uploads
+            if (isForcedSingle) {
+                fileList.innerHTML = "";
+            }
+
+            Array.from(input.files).forEach((file, index) => {
+                // If forced single mode, allow only the first file
+                if (isForcedSingle && index > 0) return;
+
+                const fileItem = document.createElement("div");
+                fileItem.classList.add("file-item");
+
+                const imgPreview = document.createElement("img");
+                imgPreview.src = URL.createObjectURL(file);
+
+                const fileName = document.createElement("span");
+                fileName.textContent = file.name;
+
+                const removeBtn = document.createElement("button");
+                removeBtn.textContent = "X";
+                removeBtn.classList.add("remove-btn");
+                removeBtn.onclick = () => {
+                    fileItem.remove();
+                    if (fileList.children.length === 0) {
+                        fileList.style.display = "none";
+                        clearAllBtn.style.display = "none";
+                    }
+                };
+
+                fileItem.appendChild(imgPreview);
+                fileItem.appendChild(fileName);
+                fileItem.appendChild(removeBtn);
+                fileList.appendChild(fileItem);
+            });
+
+            fileList.style.display = fileList.children.length > 0 ? "block" : "none";
+            clearAllBtn.style.display = fileList.children.length > 0 ? "block" : "none";
+        }
+
+        function clearAllFiles(fileListId, clearBtnId) {
+            document.getElementById(fileListId).innerHTML = "";
+            document.getElementById(fileListId).style.display = "none";
+            document.getElementById(clearBtnId).style.display = "none";
+        }
+    </script>
+
      <script>
         let currentStep = 0;
         const steps = document.querySelectorAll(".step");
@@ -301,7 +717,7 @@
                 step.classList.toggle("active", index === currentStep);
             });
             prevBtn.disabled = currentStep === 0;
-            nextBtn.textContent = currentStep === steps.length - 1 ? "Submit" : "Next";
+            nextBtn.textContent = currentStep === steps.length - 1 ? "Publish" : "Next";
             progress.style.width = ((currentStep + 1) / steps.length) * 100 + "%";
             validateInputs();
         }
